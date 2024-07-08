@@ -6,6 +6,12 @@ export default function Hero() {
           Bringing Your <br />
           Dream Into <span className="text-primary italic">Reality</span>
         </h1>
+        <img
+          src="/assets/Star.svg"
+          alt="star icon"
+          className="h-[150px] w-[150px] pb-12
+          "
+        />
       </div>
     </div>
   );
