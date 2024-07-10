@@ -27,7 +27,7 @@ export default function Header() {
               FAQ
             </li>
           </ul>
-          <Button text="Get Started" />
+          <Button text="Get Started" customStyles="px-10 py-4" />
         </div>
       </div>
     </div>
