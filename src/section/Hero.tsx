@@ -9,17 +9,26 @@ export default function Hero() {
           Bringing Your <br />
           Dream Into <span className="italic text-primary">Reality</span>
         </h1>
-        <img
-          src="/assets/Star.svg"
-          alt="star icon"
-          className="absolute right-0 h-[150px] w-[150px] pb-12"
-        />
         <p className="mt-12 max-w-[500px] font-normal opacity-80">
           We increase revenue and ensure sustainable long-term growth for your
           business through powerful Webflow websites.
         </p>
         <Button text="Book A Meeting" customStyles="mt-10 py-4 px-4" />
+
+        {/* Glow effect background */}
         <div className="glow absolute z-10 opacity-40"></div>
+        {/* Stars background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute right-[20%] top-[30%] -translate-x-1/2 -translate-y-1/2 transform">
+            <img src="/assets/Star.svg" alt="Star" className="h-28 w-28" />
+          </div>
+          <div className="absolute left-1/3 top-2/3 -translate-x-1/2 -translate-y-1/2 transform">
+            <img src="/assets/Star.svg" alt="Star" className="h-4 w-4" />
+          </div>
+          <div className="absolute right-1/3 top-2/3 -translate-x-1/2 -translate-y-1/2 transform">
+            <img src="/assets/Star.svg" alt="Star" className="h-6 w-6" />
+          </div>
+        </div>
       </div>
     </div>
   );
