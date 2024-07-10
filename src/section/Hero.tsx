@@ -1,16 +1,15 @@
 export default function Hero() {
   return (
     <div className="mt-28">
-      <div className="flex justify-center items-center text-center text-white font-bold text-8xl leading-[7rem]">
-        <h1>
+      <div className="flex items-center justify-center text-center text-white">
+        <h1 className="text-8xl font-bold leading-[7rem]">
           Bringing Your <br />
-          Dream Into <span className="text-primary italic">Reality</span>
+          Dream Into <span className="italic text-primary">Reality</span>
         </h1>
         <img
           src="/assets/Star.svg"
           alt="star icon"
-          className="h-[150px] w-[150px] pb-12
-          "
+          className="h-[150px] w-[150px] pb-12"
         />
       </div>
     </div>

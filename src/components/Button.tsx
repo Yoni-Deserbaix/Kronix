@@ -4,7 +4,7 @@ type ButtonType = {
 
 export default function Button({ text }: ButtonType) {
   return (
-    <div className="py-4 px-10 bg-primary font-semibold cursor-pointer text-background rounded-lg hover:opacity-80 transition-all">
+    <div className="cursor-pointer rounded-lg bg-primary px-10 py-4 font-semibold text-background transition-all hover:opacity-80">
       {text}
     </div>
   );
