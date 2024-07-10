@@ -1,7 +1,9 @@
+import "../index.css";
+
 export default function Hero() {
   return (
-    <div className="mt-28">
-      <div className="flex flex-col items-center justify-center text-center text-white">
+    <div className="mt-20">
+      <div className="z-10 flex flex-col items-center justify-center text-center text-white">
         <h1 className="text-8xl font-bold leading-[7rem]">
           Bringing Your <br />
           Dream Into <span className="italic text-primary">Reality</span>
@@ -15,6 +17,7 @@ export default function Hero() {
           We increase revenue and ensure sustainable long-term growth for your
           business through powerful Webflow websites.
         </p>
+        <div className="glow absolute z-10 opacity-40"></div>
       </div>
     </div>
   );

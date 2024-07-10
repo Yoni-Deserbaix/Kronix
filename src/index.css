@@ -7,3 +7,10 @@
 body {
   font-family: "Outfit", sans-serif;
 }
+
+.glow {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  box-shadow: 0 0 500px 150px #b9fd50;
+}
