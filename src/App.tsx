@@ -1,3 +1,4 @@
+import Brands from "./section/Brands";
 import Header from "./section/Header";
 import Hero from "./section/Hero";
 
@@ -8,6 +9,7 @@ export default function App() {
         <Header />
         <div className="h-[100vh]">
           <Hero />
+          <Brands />
         </div>
       </div>
     </div>
