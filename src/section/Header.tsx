@@ -3,7 +3,7 @@ import Button from "../components/Button";
 export default function Header() {
   return (
     <div>
-      <div className="flex items-center justify-between rounded-3xl py-7 text-text">
+      <div className="mx-7 flex items-center justify-between rounded-3xl py-7 text-text">
         <div className="cursor-pointer text-xl">
           <p className="text-3xl font-bold">
             Kro<span className="text-primary">nix</span>
