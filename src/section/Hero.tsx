@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Glow effect background */}
         <div className="glow absolute z-10 opacity-40"></div>
         {/* Stars background */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div>
           <div className="absolute right-[20%] top-[30%] -translate-x-1/2 -translate-y-1/2 transform">
             <img src="/assets/Star.svg" alt="Star" className="h-28 w-28" />
           </div>
