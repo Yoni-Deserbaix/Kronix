@@ -45,13 +45,15 @@ export default function HowItWorks() {
         </div>
       </div>
       <div className="mx-8 mt-52 flex items-start justify-center pb-52">
-        {designData.map((item) => (
-          <div className="flex-1 px-4">
+        {designData.map((item, index) => (
+          <div key={index} className="flex-1 px-4">
             <div className="flex items-center justify-start">
               <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary">
                 <img src={item.src} alt={item.name} className="h-12 w-12 p-1" />
               </div>
-              <hr className="-ml-1 mb-2 h-0.5 w-3/4 border-0 bg-primary"></hr>
+              {index < 2 && (
+                <hr className="-ml-1 mb-2 h-0.5 w-3/4 border-0 bg-primary"></hr>
+              )}
             </div>
             <h3 className="mt-6 text-xl font-semibold">{item.title}</h3>
             <p className="mt-6 w-2/3 font-extralight opacity-80">
