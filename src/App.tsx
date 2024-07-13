@@ -1,3 +1,4 @@
+import BeautifulWorks from "./section/BeautifulWorks";
 import Brands from "./section/Brands";
 import Header from "./section/Header";
 import Hero from "./section/Hero";
@@ -12,6 +13,11 @@ export default function App() {
           <Hero />
           <Brands />
           <HowItWorks />
+        </div>
+      </div>
+      <div className="bg-white">
+        <div className="mx-auto max-w-7xl">
+          <BeautifulWorks />
         </div>
       </div>
     </div>
