@@ -1,0 +1,49 @@
+{
+  "designData": [
+    {
+      "title": "Subscribe & get started",
+      "name": "Subscribe",
+      "src": "./assets/design/design01.svg",
+      "caption": "Submit as many design tasks as you need without worrying about individual project fees."
+    },
+    {
+      "title": "Polished designs - on time",
+      "name": "Polished designs",
+      "src": "./assets/design/design02.svg",
+      "caption": "Our designers get to work to deliver your request. Receive your design within a few days."
+    },
+    {
+      "title": "Revisions made simple",
+      "name": "Polished designs",
+      "src": "./assets/design/design03.svg",
+      "caption": "Custom designs, prompt replies and as many revisions as you need."
+    }
+  ],
+  "brandsLogo": [
+    { "name": "Layers", "src": "./assets/brands/brand01.svg" },
+    { "name": "Quotient", "src": "./assets/brands/brand02.svg" },
+    { "name": "Circooles", "src": "./assets/brands/brand03.svg" },
+    { "name": "Hooglass", "src": "./assets/brands/brand04.svg" },
+    { "name": "Command+R", "src": "./assets/brands/brand05.svg" }
+  ],
+  "worksImages": [
+    { "src": "./assets/beautifulworks/edo.svg", "alt": "Edo Logo" },
+    { "src": "./assets/beautifulworks/dfat.svg", "alt": "DFAT Logo" },
+    { "src": "./assets/beautifulworks/insights.svg", "alt": "Insights Logo" },
+    { "src": "./assets/beautifulworks/oxfam.svg", "alt": "Oxfam Logo" },
+    { "src": "./assets/beautifulworks/cvgt.svg", "alt": "CVGT Logo" },
+    {
+      "src": "./assets/beautifulworks/dropbottle.svg",
+      "alt": "Dropbottle Logo"
+    },
+    { "src": "./assets/beautifulworks/map.svg", "alt": "Map Logo" },
+    { "src": "./assets/beautifulworks/unwrapped.svg", "alt": "Unwrapped Logo" },
+    { "src": "./assets/beautifulworks/RWH.svg", "alt": "RWH Logo" },
+    { "src": "./assets/beautifulworks/bluegreen.svg", "alt": "Bluegreen Logo" },
+    {
+      "src": "./assets/beautifulworks/welcomehome.svg",
+      "alt": "Welcome Home Logo"
+    },
+    { "src": "./assets/beautifulworks/ader.svg", "alt": "Ader Logo" }
+  ]
+}

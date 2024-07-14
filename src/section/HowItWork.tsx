@@ -1,32 +1,8 @@
 import { FaArrowRight } from "react-icons/fa";
 import Button from "../components/Button";
+import { designData } from "../data.json";
 import "../index.css";
-
 export default function HowItWorks() {
-  const designData = [
-    {
-      title: "Subscribe & get started",
-      name: "Subscribe",
-      src: "./assets/design/design01.svg",
-      caption:
-        "Submit as many design tasks as you need without worrying about individual project fees.",
-    },
-    {
-      title: "Polished designs - on time",
-      name: "Polished designs",
-      src: "./assets/design/design02.svg",
-      caption:
-        "Our designers get to work to deliver your request. Receive your design within a few days.",
-    },
-    {
-      title: "Revisions made simple",
-      name: "Polished designs",
-      src: "./assets/design/design03.svg",
-      caption:
-        "Custom designs, prompt replies and as many revisions as you need.",
-    },
-  ];
-
   return (
     <div className="pt-32 text-white">
       <div className="flex items-center justify-evenly gap-20">
