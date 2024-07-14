@@ -1,17 +1,20 @@
 export default function BeautifulWorks() {
   const images = [
-    { src: "./assets/beautifulworks/edo.svg", alt: "Image 1" },
-    { src: "./assets/beautifulworks/dfat.svg", alt: "Image 2" },
-    { src: "./assets/beautifulworks/insights.svg", alt: "Image 3" },
-    { src: "./assets/beautifulworks/oxfam.svg", alt: "Image 4" },
-    { src: "./assets/beautifulworks/cvgt.svg", alt: "Image 5" },
-    { src: "./assets/beautifulworks/dropbottle.svg", alt: "Image 6" },
-    { src: "./assets/beautifulworks/map.svg", alt: "Image 7" },
-    { src: "./assets/beautifulworks/unwrapped.svg", alt: "Image 8" },
-    { src: "./assets/beautifulworks/RWH.svg", alt: "Image 9" },
-    { src: "./assets/beautifulworks/bluegreen.svg", alt: "Image 10" },
-    { src: "./assets/beautifulworks/welcomehome.svg", alt: "Image 11" },
-    { src: "./assets/beautifulworks/ader.svg", alt: "Image 12" },
+    { src: "./assets/beautifulworks/edo.svg", alt: "Edo Logo" },
+    { src: "./assets/beautifulworks/dfat.svg", alt: "DFAT Logo" },
+    { src: "./assets/beautifulworks/insights.svg", alt: "Insights Logo" },
+    { src: "./assets/beautifulworks/oxfam.svg", alt: "Oxfam Logo" },
+    { src: "./assets/beautifulworks/cvgt.svg", alt: "CVGT Logo" },
+    { src: "./assets/beautifulworks/dropbottle.svg", alt: "Dropbottle Logo" },
+    { src: "./assets/beautifulworks/map.svg", alt: "Map Logo" },
+    { src: "./assets/beautifulworks/unwrapped.svg", alt: "Unwrapped Logo" },
+    { src: "./assets/beautifulworks/RWH.svg", alt: "RWH Logo" },
+    { src: "./assets/beautifulworks/bluegreen.svg", alt: "Bluegreen Logo" },
+    {
+      src: "./assets/beautifulworks/welcomehome.svg",
+      alt: "Welcome Home Logo",
+    },
+    { src: "./assets/beautifulworks/ader.svg", alt: "Ader Logo" },
   ];
   return (
     <div>
