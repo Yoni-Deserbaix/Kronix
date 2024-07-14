@@ -1,6 +1,14 @@
 import Button from "../components/Button";
 
 export default function Header() {
+  const headerList = [
+    { name: "Process" },
+    { name: "Benefits" },
+    { name: "Services" },
+    { name: "Portfolio" },
+    { name: "FAQ" },
+  ];
+
   return (
     <div>
       <div className="mx-7 flex items-center justify-between rounded-3xl py-7 text-text">
@@ -11,21 +19,14 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-20">
           <ul className="flex flex-row gap-10 font-normal max-md:hidden">
-            <li className="cursor-pointer transition-all hover:text-gray-300">
-              Process
-            </li>
-            <li className="cursor-pointer transition-all hover:text-gray-300">
-              Benefits
-            </li>
-            <li className="cursor-pointer transition-all hover:text-gray-300">
-              Services
-            </li>
-            <li className="cursor-pointer transition-all hover:text-gray-300">
-              Portfolio
-            </li>
-            <li className="cursor-pointer transition-all hover:text-gray-300">
-              FAQ
-            </li>
+            {headerList.map((item, index) => (
+              <li
+                key={index}
+                className="cursor-pointer transition-all hover:text-gray-300"
+              >
+                {item.name}
+              </li>
+            ))}
           </ul>
           <Button text="Get Started" customStyles="px-10 py-4" />
         </div>
