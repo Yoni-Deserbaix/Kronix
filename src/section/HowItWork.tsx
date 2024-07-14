@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import Button from "../components/Button";
 import "../index.css";
 
@@ -52,7 +53,10 @@ export default function HowItWorks() {
                 <img src={item.src} alt={item.name} className="h-12 w-12 p-1" />
               </div>
               {index < 2 && (
-                <hr className="-ml-1 mb-2 h-0.5 w-3/4 border-0 bg-primary"></hr>
+                <div className="relative mb-4 mr-2 flex w-[75%] items-center">
+                  <hr className="h-0.5 flex-1 border-0 bg-primary" />
+                  <FaArrowRight className="absolute -right-2 text-primary" />
+                </div>
               )}
             </div>
             <h3 className="mt-6 text-xl font-semibold">{item.title}</h3>
