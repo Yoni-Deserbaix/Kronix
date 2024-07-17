@@ -3,7 +3,7 @@ import { worksImages } from "../data.json";
 export default function BeautifulWorks() {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center pt-28 text-center">
+      <div className="flex flex-col items-center justify-center py-28 text-center">
         <h1 className="text-5xl font-extrabold tracking-tighter">
           Our Beautiful Works
         </h1>
