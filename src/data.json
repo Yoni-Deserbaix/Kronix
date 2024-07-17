@@ -45,5 +45,46 @@
       "alt": "Welcome Home Logo"
     },
     { "src": "./assets/beautifulworks/ader.svg", "alt": "Ader Logo" }
+  ],
+  "capabilitiesButtons": [
+    {
+      "name": "Web design & UI"
+    },
+    {
+      "name": "Social media visuals"
+    },
+    {
+      "name": "Infographics"
+    },
+    {
+      "name": "Design system"
+    },
+    {
+      "name": "Email design"
+    },
+    {
+      "name": "Stationery"
+    },
+    {
+      "name": "Icons"
+    },
+    {
+      "name": "Packaging & merch"
+    },
+    {
+      "name": "Signage"
+    },
+    {
+      "name": "Brochures"
+    },
+    {
+      "name": "Logos & branding"
+    },
+    {
+      "name": "Digital ads"
+    },
+    {
+      "name": "Wireframes"
+    }
   ]
 }
