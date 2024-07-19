@@ -16,6 +16,23 @@ export default function Capabilities() {
           />
         ))}
       </div>
+      <div className="flex items-center justify-evenly gap-20 py-16 text-start">
+        <div className="flex w-1/2 flex-col">
+          <span className="text-sm font-light text-primary">BENEFITS</span>
+          <h1 className="mt-4 text-5xl font-bold">
+            The design subscription that connects you to your dream team{" "}
+          </h1>
+        </div>
+        <div className="flex w-2/6 translate-y-20 flex-col pb-16">
+          <p className="mt-4 text-xl font-extralight opacity-80">
+            A subscription can alleviate the stress of staffing, managing
+            expenses, or make design calls like a Creative Director. We partner
+            with you to ensure that your design elevates your brand to new
+            levels.
+          </p>
+          <Button text="See Pricing" customStyles="px-2 py-4 w-36 mt-10" />
+        </div>
+      </div>
     </div>
   );
 }
