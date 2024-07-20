@@ -86,5 +86,52 @@
     {
       "name": "Wireframes"
     }
+  ],
+  "capabilitiesCards": [
+    {
+      "title": "1. On-demand requests",
+      "description": "Put all your requests in the design queue in Trello, and we'll knock them out 1 by 1.",
+      "image": "./assets/capabilities/capabilities01.svg"
+    },
+    {
+      "title": "2. Top-notch quality",
+      "description": "High-end work from a dedicated team of senior designers that's always available when you need it.",
+      "image": "./assets/capabilities/capabilities02.svg"
+    },
+    {
+      "title": "3. Powered by - Webflow",
+      "description": "We build every site on Webflow, making them dynamic, accessible, and easily scalable. It's easy for you like Squarespace but better.",
+      "image": "./assets/capabilities/capabilities03.svg"
+    },
+    {
+      "title": "4. Fast. Responsive. Reliable.",
+      "description": "Get regular updates on your projects and can expect to receive your designs within 2-3 days.",
+      "image": "./assets/capabilities/capabilities04.svg"
+    },
+    {
+      "title": "5. No Lock in contracts",
+      "description": "Pay the same every month, no surprises. You can use it for as long as you want and cancel anytime.",
+      "image": "./assets/capabilities/capabilities05.svg"
+    },
+    {
+      "title": "6. Great value for money",
+      "description": "Get the power of dedicated design team at fraction of the cost of full-time employee. ($54k/yr vs. $112k/yr).",
+      "image": "./assets/capabilities/capabilities06.svg"
+    },
+    {
+      "title": "7. Customized for you",
+      "description": "We design and build custom for you. We're never starting from a template unless you want that? You don't, right?",
+      "image": "./assets/capabilities/capabilities07.svg"
+    },
+    {
+      "title": "8. Creative paying",
+      "description": "We're here when you need us and not on payroll when you don't.",
+      "image": "./assets/capabilities/capabilities08.svg"
+    },
+    {
+      "title": "9. Expert turnovers",
+      "description": "You're getting 10+ years of design experience with every request. No hand-holding required.",
+      "image": "./assets/capabilities/capabilities09.svg"
+    }
   ]
 }
