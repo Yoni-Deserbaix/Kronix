@@ -1,6 +1,5 @@
-// pages/Capabilities.js
 import Button from "../components/Button";
-import { capabilitiesButtons } from "../data.json";
+import { capabilitiesButtons, capabilitiesCards } from "../data.json";
 
 export default function Capabilities() {
   return (
@@ -32,6 +31,20 @@ export default function Capabilities() {
           </p>
           <Button text="See Pricing" customStyles="px-2 py-4 w-36 mt-10" />
         </div>
+      </div>
+      <div className="grid grid-cols-1 text-start sm:grid-cols-2 lg:grid-cols-3">
+        {capabilitiesCards.map((card) => (
+          <div
+            className="border-1 border border-primary border-opacity-5 px-8 py-12"
+            key={card.title}
+          >
+            <img src={card.image} className="mb-4 h-10 w-10" alt={card.title} />
+            <h5 className="mb-4 pl-2 text-xl">{card.title}</h5>
+            <p className="text-md font max-w-xs text-darkGray">
+              {card.description}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
