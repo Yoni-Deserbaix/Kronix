@@ -32,7 +32,7 @@ export default function Capabilities() {
           <Button text="See Pricing" customStyles="px-2 py-4 w-36 mt-10" />
         </div>
       </div>
-      <div className="grid grid-cols-1 text-start sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 py-14 text-start sm:grid-cols-2 lg:grid-cols-3">
         {capabilitiesCards.map((card) => (
           <div
             className="border-1 border border-primary border-opacity-5 px-8 py-12"
