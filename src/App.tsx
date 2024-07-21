@@ -4,6 +4,7 @@ import Capabilities from "./section/Capabilities";
 import Header from "./section/Header";
 import Hero from "./section/Hero";
 import HowItWorks from "./section/HowItWork";
+import Testimonial from "./section/Testimonial";
 
 export default function App() {
   return (
@@ -23,6 +24,11 @@ export default function App() {
       </div>
       <div className="mx-auto max-w-7xl">
         <Capabilities />
+      </div>
+      <div className="bg-white">
+        <div className="mx-auto max-w-7xl">
+          <Testimonial />
+        </div>
       </div>
     </div>
   );
