@@ -11,6 +11,9 @@ export default {
         lightGray: "#CDD0D8",
         darkGray: "#9593A4",
       },
+      fontFamily: {
+        jarkarta: ['"Plus Jakarta Sans"', "sans-serif"],
+      },
     },
   },
   plugins: [],

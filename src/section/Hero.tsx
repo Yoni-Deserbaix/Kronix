@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="z-10 flex flex-col items-center justify-center text-center text-white">
         <h1 className="text-8xl font-bold leading-[7rem]">
           Bringing Your <br />
-          Dream Into <span className="italic text-primary">Reality</span>
+          Dream Into <span className="font-jarkarta text-primary">Reality</span>
         </h1>
         <p className="mt-12 max-w-[500px] font-normal opacity-80">
           We increase revenue and ensure sustainable long-term growth for your
