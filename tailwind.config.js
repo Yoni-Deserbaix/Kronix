@@ -9,6 +9,8 @@ export default {
         text: "#FFFFFF",
         bgCard: "#222222",
         lightGray: "#CDD0D8",
+        borderGray: "#d9d9d9",
+        bgGray: "#f9f9f9",
         darkGray: "#9593A4",
       },
       fontFamily: {
