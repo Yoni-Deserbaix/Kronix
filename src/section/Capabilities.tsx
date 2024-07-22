@@ -10,26 +10,29 @@ export default function Capabilities() {
         {capabilitiesButtons.map((item) => (
           <Button
             key={item.name}
-            customStyles="px-10 py-3 text-sm"
+            customStyles="px-10 h-[49.19px] text-sm"
             text={item.name}
           />
         ))}
       </div>
-      <div className="flex items-center justify-evenly gap-20 py-16 text-start">
-        <div className="flex w-1/2 flex-col">
+      <div className="mx-12 flex items-center justify-evenly gap-20 py-16 text-start">
+        <div className="flex w-[606px] flex-col">
           <span className="text-sm font-light text-primary">BENEFITS</span>
           <h1 className="mt-4 text-5xl font-bold">
             The design subscription that connects you to your dream team{" "}
           </h1>
         </div>
-        <div className="flex w-2/6 translate-y-20 flex-col pb-16">
+        <div className="flex w-[536px] translate-y-20 flex-col pb-16">
           <p className="mt-4 text-xl font-extralight opacity-80">
             A subscription can alleviate the stress of staffing, managing
             expenses, or make design calls like a Creative Director. We partner
             with you to ensure that your design elevates your brand to new
             levels.
           </p>
-          <Button text="See Pricing" customStyles="px-2 py-4 w-36 mt-10" />
+          <Button
+            text="See Pricing"
+            customStyles="w-[149px] h-[56px] w-36 mt-10"
+          />
         </div>
       </div>
       <div className="grid grid-cols-1 py-14 text-start sm:grid-cols-2 lg:grid-cols-3">

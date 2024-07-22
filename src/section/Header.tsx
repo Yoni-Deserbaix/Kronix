@@ -28,7 +28,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <Button text="Get Started" customStyles="px-10 py-4" />
+          <Button text="Get Started" customStyles="w-[160px] h-[56px]" />
         </div>
       </div>
     </div>
