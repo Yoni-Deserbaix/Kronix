@@ -185,5 +185,43 @@
         "Top tier design"
       ]
     }
+  ],
+  "NewsArticlesCards": [
+    {
+      "image": "./assets/news_articles/news01.svg",
+      "category": "Branding",
+      "title": "The Importance of Branding in Business",
+      "description": "Effective branding can elevate your business and..."
+    },
+    {
+      "image": "./assets/news_articles/news02.svg",
+      "category": "TikTok",
+      "title": "TikTok Marketing Strategies",
+      "description": "Learn the latest TikTok strategies to boost your brand..."
+    },
+    {
+      "image": "./assets/news_articles/news03.svg",
+      "category": "Logo Design",
+      "title": "Designing a Memorable Logo",
+      "description": "Explore principles of designing a logo that stands out..."
+    },
+    {
+      "image": "./assets/news_articles/news04.svg",
+      "category": "FB",
+      "title": "Maximizing Facebook Ads ROI",
+      "description": "Tips to maximize your ROI with Facebook Ads..."
+    },
+    {
+      "image": "./assets/news_articles/news05.svg",
+      "category": "AI",
+      "title": "AI in Modern Marketing",
+      "description": "AI is revolutionizing marketing and improving engagement..."
+    },
+    {
+      "image": "./assets/news_articles/news06.svg",
+      "category": "NFT",
+      "title": "Understanding NFTs",
+      "description": "A guide to NFTs and how they're transforming digital art..."
+    }
   ]
 }

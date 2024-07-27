@@ -37,7 +37,7 @@ export default function Testimonial() {
           </div>
           <div className="flex items-center justify-center p-8 lg:pr-16">
             <img
-              src="./assets/testimonial_pp.png"
+              src="./assets/testimonial_pp.svg"
               alt="Picture of the Director of Gymstory "
               className="w-full max-w-[200px] lg:max-w-none"
             />
