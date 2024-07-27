@@ -18,7 +18,7 @@ export default function HowItWorks() {
             Work with senior designers. Subscribe and make as many requests as
             you need - no limits.
           </p>
-          <Button text="See Pricing" customStyles="px-2 h-[56px] w-36 mt-10" />
+          <Button text="See Pricing" className="mt-10 h-[56px] w-36 px-2" />
         </div>
       </div>
       <div className="mx-8 mt-52 flex items-start justify-center pb-52">

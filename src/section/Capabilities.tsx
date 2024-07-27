@@ -10,7 +10,7 @@ export default function Capabilities() {
         {capabilitiesButtons.map((item) => (
           <Button
             key={item.name}
-            customStyles="px-10 h-[49.19px] text-sm"
+            className="h-[49.19px] px-10 text-sm"
             text={item.name}
           />
         ))}
@@ -29,10 +29,7 @@ export default function Capabilities() {
             with you to ensure that your design elevates your brand to new
             levels.
           </p>
-          <Button
-            text="See Pricing"
-            customStyles="w-[149px] h-[56px] w-36 mt-10"
-          />
+          <Button text="See Pricing" className="mt-10 h-[56px] w-[149px]" />
         </div>
       </div>
       <div className="grid grid-cols-1 py-14 text-start sm:grid-cols-2 lg:grid-cols-3">

@@ -28,7 +28,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <Button text="Get Started" customStyles="w-[160px] h-[56px]" />
+          <Button text="Get Started" className="h-[56px] w-[160px]" />
         </div>
       </div>
     </div>

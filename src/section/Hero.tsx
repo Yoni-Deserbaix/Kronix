@@ -13,7 +13,7 @@ export default function Hero() {
           We increase revenue and ensure sustainable long-term growth for your
           business through powerful Webflow websites.
         </p>
-        <Button text="Book A Meeting" customStyles="mt-10 h-[56px] w-[149px]" />
+        <Button text="Book A Meeting" className="mt-10 h-[56px] w-[149px]" />
 
         {/* Glow effect background */}
         <div className="glow absolute z-10 opacity-40"></div>
