@@ -1,6 +1,6 @@
 export default function Testimonial() {
   return (
-    <div className="pt-12 text-center text-background">
+    <div className="py-20 text-center text-background">
       <p className="text-lg font-normal">TESTIMONIAL</p>
       <h1 className="mx-auto w-11/12 max-w-[484px] text-5xl font-bold leading-tight">
         Customer is Our Top Priority
