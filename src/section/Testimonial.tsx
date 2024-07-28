@@ -1,16 +1,15 @@
+import TitleLight from "../components/TitleLight";
+
 export default function Testimonial() {
   return (
     <div className="py-20 text-center text-background">
       <p className="text-lg font-normal">TESTIMONIAL</p>
-      <h1 className="mx-auto w-11/12 max-w-[484px] text-5xl font-bold leading-tight">
-        Customer is Our Top Priority
-      </h1>
-      <div className="pt-6">
-        <p className="mx-auto w-11/12 max-w-[462px] text-center text-lg">
-          We survey all of our clients, the results of which go directly to our
-          CEO.
-        </p>
-      </div>
+      <TitleLight
+        title={`Customer is Our Top \n Priority`}
+        titleStyles="tracking-normal font-[750]"
+        description={`We survey all of our clients, the results of which go directly \n to our CEO.`}
+        descriptionStyles="opacity-100"
+      />
       <div className="my-12 mb-36 flex justify-center px-4">
         <div className="flex h-auto w-full max-w-[1000px] flex-col justify-between rounded-[40px] border border-borderGray bg-bgGray shadow-md lg:h-[485px] lg:flex-row">
           <div className="flex flex-col items-start p-8 text-start text-background md:px-14">
