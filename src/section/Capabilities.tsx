@@ -14,7 +14,7 @@ export default function Capabilities() {
         {capabilitiesButtons.map((item) => (
           <Button
             key={item.name}
-            className="h-[49.19px] px-10 text-sm"
+            className="h-[49.19px] cursor-default px-10 text-sm"
             text={item.name}
           />
         ))}

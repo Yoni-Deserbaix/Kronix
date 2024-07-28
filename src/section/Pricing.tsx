@@ -24,7 +24,7 @@ export default function Pricing() {
                 {card.badge && (
                   <Button
                     text={card.badge}
-                    className={`text-md px-4 py-2 font-[350] ${index === 1 && "bg-white"}`}
+                    className={`text-md cursor-default px-4 py-2 font-[350] ${index === 1 && "bg-white"}`}
                   />
                 )}
               </div>
