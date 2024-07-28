@@ -8,12 +8,12 @@ export default function HowItWorks() {
       <div className="mx-12 flex flex-col items-center justify-evenly md:flex-row md:gap-20">
         <div className="flex flex-col md:w-[606px]">
           <span className="text-sm text-primary">HOW WE WORK</span>
-          <h1 className="mt-4 text-5xl font-bold">
+          <h1 className="mt-4 text-4xl font-bold md:text-5xl">
             Get a dedicated design team at a fraction of the cost.
           </h1>
         </div>
-        <div className="flex translate-y-12 flex-col md:w-[500px]">
-          <p className="mt-4 text-xl font-extralight opacity-80">
+        <div className="flex translate-y-6 flex-col md:w-[500px] md:translate-y-12">
+          <p className="mt-4 text-lg font-extralight opacity-80 md:text-xl">
             Grow your brand with high-quality design for a flat monthly fee.
             Work with senior designers. Subscribe and make as many requests as
             you need - no limits.

@@ -22,12 +22,12 @@ export default function Capabilities() {
       <div className="mx-12 flex flex-col items-center justify-evenly py-16 text-start md:flex-row md:gap-20">
         <div className="flex flex-col md:w-[606px]">
           <span className="text-sm font-light text-primary">BENEFITS</span>
-          <h1 className="mt-4 text-5xl font-bold">
+          <h1 className="mt-4 text-4xl font-bold md:text-5xl">
             The design subscription that connects you to your dream team{" "}
           </h1>
         </div>
         <div className="flex translate-y-8 flex-col md:w-[536px] md:translate-y-20 md:pb-16">
-          <p className="mt-4 text-xl font-extralight opacity-80">
+          <p className="mt-4 text-lg font-extralight opacity-80 md:text-xl">
             A subscription can alleviate the stress of staffing, managing
             expenses, or make design calls like a Creative Director. We partner
             with you to ensure that your design elevates your brand to new

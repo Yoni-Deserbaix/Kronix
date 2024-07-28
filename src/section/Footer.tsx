@@ -38,8 +38,8 @@ export default function Footer() {
               <h2 className="text-3xl font-bold">
                 Kro<span className="text-primary">nix</span>
               </h2>
-              <p className="max-w-[311px] pt-8 font-light">
-                Kornix - the leading digital agency based in the UK, working
+              <p className="pt-8 font-light md:max-w-[311px]">
+                Kronix - the leading digital agency based in the UK, working
                 with top-tier clients, from start-ups to enterprises.
               </p>
             </div>

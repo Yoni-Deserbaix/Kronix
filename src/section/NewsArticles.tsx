@@ -11,7 +11,7 @@ export default function NewsArticles() {
         descriptionStyles="-mt-2 text-white opacity-100 font-light"
         className="mb-2 leading-tight tracking-tighter"
       />
-      <div className="flex flex-wrap justify-center gap-7 py-28">
+      <div className="flex flex-wrap justify-center gap-7 pb-28 pt-16 md:pt-28">
         {NewsArticlesCards.map((card, index) => (
           <div
             key={index}
