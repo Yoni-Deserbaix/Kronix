@@ -28,7 +28,7 @@ export default function TitleLight({
       </h1>
       <div className="pt-4">
         <p
-          className={`text-background opacity-80 md:text-lg ${descriptionStyles}`}
+          className={`mx-8 text-background opacity-80 md:text-lg ${descriptionStyles}`}
         >
           {description &&
             description.split("\n").map((line, index) => (
