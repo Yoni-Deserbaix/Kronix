@@ -2,6 +2,7 @@ import BeautifulWorks from "./section/BeautifulWorks";
 import Brands from "./section/Brands";
 import Capabilities from "./section/Capabilities";
 import FAQ from "./section/FAQ";
+import Footer from "./section/Footer";
 import Header from "./section/Header";
 import Hero from "./section/Hero";
 import HowItWorks from "./section/HowItWork";
@@ -41,6 +42,9 @@ export default function App() {
         <div className="mx-auto max-w-7xl">
           <FAQ />
         </div>
+      </div>
+      <div className="mx-auto max-w-7xl">
+        <Footer />
       </div>
     </div>
   );
