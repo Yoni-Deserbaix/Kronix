@@ -10,7 +10,7 @@ export default function Testimonial() {
         description={`We survey all of our clients, the results of which go directly \n to our CEO.`}
         descriptionStyles="opacity-100"
       />
-      <div className="my-12 mb-36 flex justify-center px-4">
+      <div className="mx-8 my-12 mb-36 flex justify-center">
         <div className="flex h-auto w-full max-w-[1000px] flex-col justify-between rounded-[40px] border border-borderGray bg-bgGray shadow-md lg:h-[485px] lg:flex-row">
           <div className="flex flex-col items-start p-8 text-start text-background md:px-14">
             <img

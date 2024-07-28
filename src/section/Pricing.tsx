@@ -14,7 +14,7 @@ export default function Pricing() {
         {pricingCards.map((card, index) => (
           <div
             key={index}
-            className="h-auto w-[90%] max-w-[360px] rounded-2xl border border-primary border-opacity-30 bg-transparent py-10 text-white md:h-[864px]"
+            className="mx-10 h-auto rounded-2xl border border-primary border-opacity-30 bg-transparent py-10 text-white md:mx-0 md:h-[864px] md:max-w-[360px]"
           >
             <div className="px-8">
               <div className="flex gap-3">
