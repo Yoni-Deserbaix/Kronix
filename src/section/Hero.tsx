@@ -5,11 +5,11 @@ export default function Hero() {
   return (
     <div className="mt-20">
       <div className="z-10 flex flex-col items-center justify-center text-center text-white">
-        <h1 className="text-8xl font-bold leading-[7rem]">
+        <h1 className="text-5xl font-bold md:text-8xl md:leading-[7rem]">
           Bringing Your <br />
           Dream Into <span className="font-jarkarta text-primary">Reality</span>
         </h1>
-        <p className="mt-12 max-w-[500px] font-normal opacity-80">
+        <p className="mt-8 w-3/4 font-normal opacity-80 md:mt-12 md:max-w-[500px]">
           We increase revenue and ensure sustainable long-term growth for your
           business through powerful Webflow websites.
         </p>
@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Glow effect background */}
         <div className="glow absolute z-10 opacity-40"></div>
         {/* Stars background */}
-        <div>
+        <div className="hidden md:flex">
           <div className="absolute right-[20%] top-[30%] -translate-x-1/2 -translate-y-1/2 transform">
             <img src="/assets/Star.svg" alt="Star" className="h-28 w-28" />
           </div>
