@@ -3,7 +3,7 @@ import { worksImages } from "../data.json";
 
 export default function BeautifulWorks() {
   return (
-    <div className="py-[4.9rem]">
+    <div className="py-[4.9rem]" id="portfolio">
       <TitleLight
         title="Our Beautiful Works"
         description={`We help our clients grow their bottom-line with clear and \n professional websites.`}

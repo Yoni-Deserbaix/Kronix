@@ -36,7 +36,10 @@ const AccordionItem = ({ question, answer }: FaqType) => {
 
 export default function FAQ() {
   return (
-    <div className="flex flex-col items-center justify-center pb-72 pt-28 text-center">
+    <div
+      className="flex flex-col items-center justify-center pb-72 pt-28 text-center"
+      id="faq"
+    >
       <TitleLight
         title="FAQ's"
         description=" Providing answers to your questions"

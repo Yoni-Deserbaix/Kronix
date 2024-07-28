@@ -6,11 +6,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const headerList = [
-    { name: "Process" },
-    { name: "Benefits" },
-    { name: "Services" },
-    { name: "Portfolio" },
-    { name: "FAQ" },
+    { name: "Process", id: "process" },
+    { name: "Benefits", id: "benefits" },
+    { name: "Services", id: "services" },
+    { name: "Portfolio", id: "portfolio" },
+    { name: "FAQ", id: "faq" },
   ];
 
   return (
@@ -24,12 +24,13 @@ export default function Header() {
         <div className="hidden items-center gap-20 lg:flex">
           <ul className="flex flex-row gap-10 font-normal">
             {headerList.map((item, index) => (
-              <li
+              <a
+                href={`#${item.id}`}
                 key={index}
                 className="cursor-pointer transition-all hover:text-gray-300"
               >
                 {item.name}
-              </li>
+              </a>
             ))}
           </ul>
           <Button text="Get Started" className="h-[56px] w-[160px]" />
@@ -53,15 +54,15 @@ export default function Header() {
         <div className="flex justify-end p-4"></div>
         <ul className="mx-8 flex flex-col items-start gap-8 font-normal">
           {headerList.map((item, index) => (
-            <li
+            <a
+              href={`#${item.id}`}
               key={index}
               className="w-full cursor-pointer underline underline-offset-8 transition-all hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
               {item.name}
-            </li>
+            </a>
           ))}
-
           <Button
             text="Get Started"
             className="h-[56px] w-full text-base font-extralight"

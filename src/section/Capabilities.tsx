@@ -4,7 +4,7 @@ import { capabilitiesButtons, capabilitiesCards } from "../data.json";
 
 export default function Capabilities() {
   return (
-    <div className="text-white">
+    <div className="text-white" id="benefits">
       <TitleDark
         category="our capabilities"
         title="We can help you with..."
@@ -36,7 +36,10 @@ export default function Capabilities() {
           <Button text="See Pricing" className="mt-10 h-[56px] w-[149px]" />
         </div>
       </div>
-      <div className="grid grid-cols-1 py-14 text-start sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        className="grid grid-cols-1 py-14 text-start sm:grid-cols-2 lg:grid-cols-3"
+        id="services"
+      >
         {capabilitiesCards.map((card) => (
           <div
             className="border-1 border border-primary border-opacity-5 px-8 py-12"

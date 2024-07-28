@@ -4,7 +4,7 @@ import { designData } from "../data.json";
 import "../index.css";
 export default function HowItWorks() {
   return (
-    <div className="pt-32 text-white">
+    <div className="pt-32 text-white" id="process">
       <div className="mx-12 flex items-center justify-evenly gap-20">
         <div className="flex w-[606px] flex-col">
           <span className="text-sm text-primary">HOW WE WORK</span>
