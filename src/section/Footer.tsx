@@ -44,25 +44,50 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex flex-col gap-4 font-light">
-              <li className="flex items-center gap-4">
+              <a
+                href="mailto:info@kronix.com"
+                className="flex items-center gap-4"
+              >
                 <HiOutlineMail size={20} /> info@kronix.com
-              </li>
-              <li className="flex items-center gap-4">
+              </a>
+              <a href="tel:(001) 1231 3435" className="flex items-center gap-4">
                 <HiOutlinePhone size={20} />
                 (001) 1231 3435
-              </li>
+              </a>
               <li className="flex items-center gap-5">
                 <TiSocialFacebook
                   size={20}
-                  className="rounded-full bg-primary p-0.5 text-background"
+                  className="cursor-pointer rounded-full bg-primary p-0.5 text-background transition-all hover:opacity-60"
                 />
-                <FaInstagram size={20} />
-                <FaLinkedinIn size={20} />
-                <FaDribbble size={20} />
+                <FaInstagram
+                  size={20}
+                  className="cursor-pointer transition-all hover:opacity-60"
+                />
+                <FaLinkedinIn
+                  size={20}
+                  className="cursor-pointer transition-all hover:opacity-60"
+                />
+                <FaDribbble
+                  size={20}
+                  className="cursor-pointer transition-all hover:opacity-60"
+                />
               </li>
             </div>
           </div>
         </div>
+      </div>
+      <hr className="mx-auto mt-20 h-px w-11/12 border-0 bg-[#404040] md:w-full"></hr>
+      <div className="mx-8 flex flex-col justify-between gap-10 py-8 font-light text-white md:flex-row">
+        <ul className="flex gap-10">
+          <li>Process</li>
+          <li>Benefits</li>
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>FAQ</li>
+        </ul>
+        <a href="mailto:nazmulshanto1122@gmail.com">
+          © 2023 shantogfx - All Right Reserved
+        </a>
       </div>
     </div>
   );
