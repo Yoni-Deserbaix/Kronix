@@ -53,6 +53,20 @@ export default function FAQ() {
               answer={faq.answer}
             />
           ))}
+          <div className="mx-auto w-[85%] md:w-11/12">
+            <textarea
+              placeholder="Ask us what you want to know..."
+              className="border-1 pla mx-auto h-48 w-full resize-none rounded-2xl border border-background p-4"
+            ></textarea>
+            <div className="mx-1 flex items-center justify-between pt-4">
+              <p className="pr-2 text-start text-background opacity-80 md:w-[302px]">
+                We will answer your questions via email within 48 hours.
+              </p>
+              <button className="h-12 w-[140px] rounded-full bg-primary font-semibold">
+                Send
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
