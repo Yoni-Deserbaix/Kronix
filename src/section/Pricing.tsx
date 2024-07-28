@@ -12,7 +12,7 @@ export default function Pricing() {
           Simple pricing to level up your brand.
         </h1>
         <div className="pt-8">
-          <p className="mx-auto w-11/12 max-w-[462px] text-center text-sm font-extralight opacity-80 md:text-lg">
+          <p className="text-md mx-auto w-11/12 max-w-[462px] text-center font-extralight opacity-80 md:text-lg">
             Senior experts. On-demand requests. Fast turnarounds. Flat monthly
             fee. Cancel anytime.
           </p>

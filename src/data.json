@@ -223,5 +223,23 @@
       "title": "Understanding NFTs",
       "description": "A guide to NFTs and how they're transforming digital art..."
     }
+  ],
+  "faqData": [
+    {
+      "question": "Do you have specific pricing plans to show?",
+      "answer": "Yes, we offer a variety of pricing plans tailored to meet different needs. Contact us for more details."
+    },
+    {
+      "question": "How many years of experience do you have?",
+      "answer": "We have over 10 years of experience in providing top-notch services to our clients."
+    },
+    {
+      "question": "What companies have you worked with?",
+      "answer": "We have collaborated with a wide range of companies, including Fortune 500 firms and innovative startups."
+    },
+    {
+      "question": "Am I safe leaving my company in your hands?",
+      "answer": "Absolutely. Our team is dedicated to ensuring the safety and success of your company through our expert services."
+    }
   ]
 }
