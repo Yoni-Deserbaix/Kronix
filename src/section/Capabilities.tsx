@@ -1,11 +1,15 @@
 import Button from "../components/Button";
+import TitleDark from "../components/TitleDark";
 import { capabilitiesButtons, capabilitiesCards } from "../data.json";
 
 export default function Capabilities() {
   return (
-    <div className="pt-12 text-center text-white">
-      <p className="text-lg font-light text-primary">OUR CAPABILITIES</p>
-      <h1 className="pt-4 text-5xl font-semibold">We can help you with...</h1>
+    <div className="text-white">
+      <TitleDark
+        category="our capabilities"
+        title="We can help you with..."
+        className=""
+      />
       <div className="flex flex-wrap justify-center gap-2 pt-12">
         {capabilitiesButtons.map((item) => (
           <Button

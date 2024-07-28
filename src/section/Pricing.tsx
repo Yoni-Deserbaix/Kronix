@@ -1,23 +1,15 @@
 import Button from "../components/Button";
+import TitleDark from "../components/TitleDark";
 import { pricingCards } from "../data.json";
 
 export default function Pricing() {
   return (
     <div>
-      <div className="pt-36 text-center text-white">
-        <p className="text-lg font-normal uppercase text-primary">
-          Clear & Simple Pricing
-        </p>
-        <h1 className="mx-auto max-w-[810px] text-3xl font-bold leading-tight md:text-5xl">
-          Simple pricing to level up your brand.
-        </h1>
-        <div className="pt-8">
-          <p className="text-md mx-auto w-11/12 max-w-[462px] text-center font-extralight opacity-80 md:text-lg">
-            Senior experts. On-demand requests. Fast turnarounds. Flat monthly
-            fee. Cancel anytime.
-          </p>
-        </div>
-      </div>
+      <TitleDark
+        category="Clear & Simple Pricing"
+        title="Simple pricing to level up your brand."
+        description={`Senior experts. On-demand requests. Fast\n turnarounds. Flat monthly fee. Cancel anytime.`}
+      />
       <div className="mt-4 flex flex-col items-center gap-8 py-12 md:mt-16 md:flex-row md:flex-wrap md:justify-center">
         {pricingCards.map((card, index) => (
           <div

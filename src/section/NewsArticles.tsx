@@ -1,19 +1,16 @@
+import TitleDark from "../components/TitleDark";
 import { NewsArticlesCards } from "../data.json";
 
 export default function NewsArticles() {
   return (
     <div>
-      <div className="space-y-4 pt-36 text-center text-white">
-        <p className="text-lg font-normal uppercase text-primary">blogs</p>
-        <h1 className="mx-auto max-w-[810px] text-5xl font-semibold leading-tight tracking-tighter">
-          News & Articles
-        </h1>
-        <div>
-          <p className="mx-auto w-11/12 max-w-[462px] text-center text-lg font-light">
-            Best Articles to get started
-          </p>
-        </div>
-      </div>
+      <TitleDark
+        category="blogs"
+        title="News & Artciles"
+        description="Best Articles to get started"
+        descriptionStyles="-mt-2 text-white opacity-100 font-light"
+        className="mb-2 leading-tight tracking-tighter"
+      />
       <div className="flex flex-wrap justify-center gap-7 py-28">
         {NewsArticlesCards.map((card, index) => (
           <div
