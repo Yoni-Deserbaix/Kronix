@@ -62,7 +62,7 @@ export default function FAQ() {
               <p className="pr-2 text-start text-background opacity-80 md:w-[302px]">
                 We will answer your questions via email within 48 hours.
               </p>
-              <button className="h-12 w-[140px] rounded-full bg-primary font-semibold">
+              <button className="h-12 w-[140px] rounded-full bg-primary font-semibold transition-all hover:opacity-95 active:opacity-60">
                 Send
               </button>
             </div>
