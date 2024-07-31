@@ -18,7 +18,9 @@ export default function HowItWorks() {
             Work with senior designers. Subscribe and make as many requests as
             you need - no limits.
           </p>
-          <Button text="See Pricing" className="mt-10 h-[56px] w-36 px-2" />
+          <a href="#pricing">
+            <Button text="See Pricing" className="mt-10 h-[56px] w-36 px-2" />
+          </a>
         </div>
       </div>
       <div className="mx-8 mt-36 flex flex-col items-start justify-center pb-52 md:mt-52 md:flex-row">

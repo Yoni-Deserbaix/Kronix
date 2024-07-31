@@ -10,7 +10,10 @@ export default function Pricing() {
         title="Simple pricing to level up your brand."
         description={`Senior experts. On-demand requests. Fast\n turnarounds. Flat monthly fee. Cancel anytime.`}
       />
-      <div className="mt-4 flex flex-col items-center gap-8 py-12 md:mt-16 md:flex-row md:flex-wrap md:justify-center">
+      <div
+        id="pricing"
+        className="mt-4 flex flex-col items-center gap-8 py-12 md:mt-16 md:flex-row md:flex-wrap md:justify-center"
+      >
         {pricingCards.map((card, index) => (
           <div
             key={index}
