@@ -23,9 +23,9 @@ export default function Footer() {
           </p>
           <Button
             text={
-              <>
+              <a href="#pricing" className="flex items-center">
                 See Pricing <FaCircleArrowRight className="ml-3" />
-              </>
+              </a>
             }
             className="mx-auto mt-12 h-14 w-[185px]"
           />
