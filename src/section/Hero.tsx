@@ -16,7 +16,7 @@ export default function Hero() {
         <Button text="Book A Meeting" className="mt-10 h-[56px] w-[149px]" />
 
         {/* Glow effect background */}
-        <div className="glow absolute opacity-40"></div>
+        <div className="glow absolute top-80 opacity-35"></div>
         {/* Stars background */}
         <div className="hidden md:flex">
           <div className="absolute right-[20%] top-[30%] -translate-x-1/2 -translate-y-1/2 transform">
