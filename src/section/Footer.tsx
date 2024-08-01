@@ -78,13 +78,13 @@ export default function Footer() {
       </div>
       <hr className="mx-auto mt-20 h-px w-11/12 border-0 bg-[#404040] md:w-full"></hr>
       <div className="mx-8 flex flex-col justify-between gap-10 py-8 font-light text-white md:flex-row">
-        <ul className="flex gap-10">
+        <div className="flex flex-wrap gap-5 md:gap-10">
           <a href="#process">Process</a>
           <a href="#benefits">Benefits</a>
           <a href="#services">Services</a>
           <a href="#portfolio">Portfolio </a>
           <a href="#faq">FAQ</a>
-        </ul>
+        </div>
         <a href="mailto:nazmulshanto1122@gmail.com">
           © 2023 shantogfx - All Right Reserved
         </a>
