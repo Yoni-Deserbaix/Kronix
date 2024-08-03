@@ -10,46 +10,25 @@ export default function BeautifulWorks() {
         description={`We help our clients grow their bottom-line with clear and \n professional websites.`}
       />
       <div className="w-full pt-20">
-        <div className="grid h-[800px] grid-cols-2 gap-5 overflow-y-hidden md:h-[1000px] md:grid-cols-4">
-          {worksImages.map((image, index) => (
+        <div className="grid h-[1000px] grid-cols-2 gap-5 overflow-hidden md:grid-cols-4">
+          {worksImages.concat(worksImages).map((image, index) => (
             <motion.div
-              initial={{ translateY: 0 }}
-              animate={{
-                translateY: index % 2 === 0 ? "-50%" : "50%",
-              }}
+              key={index}
+              initial={{ translateY: index % 2 === 0 ? "0%" : "-200%" }}
+              animate={{ translateY: index % 2 === 0 ? "-200%" : "0%" }}
               transition={{
-                duration: 5,
+                duration: 20,
                 repeat: Infinity,
                 ease: "linear",
               }}
-              key={index}
             >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="h-[300px] w-full object-cover shadow-lg"
-              />
-            </motion.div>
-          ))}
-          {worksImages.map((image, index) => (
-            <motion.div
-              initial={{ translateY: 0 }}
-              animate={{
-                translateY: index % 2 === 0 ? "-50%" : "50%",
-              }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              key={index}
-              className="gap-5"
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="h-[300px] w-full object-cover shadow-lg"
-              />
+              <div className={`${index % 2 === 0 ? "-mb-20 mt-20" : ""}`}>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full object-cover shadow-lg"
+                />
+              </div>
             </motion.div>
           ))}
         </div>
