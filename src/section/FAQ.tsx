@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { VscChevronDown } from "react-icons/vsc";
 import TitleLight from "../components/TitleLight";
 import { faqData } from "../data.json";
@@ -23,11 +24,26 @@ const AccordionItem = ({ question, answer }: FaqType) => {
               className={`rounded-full bg-primary p-2 font-extralight text-background transition-transform ${open ? "rotate-180" : ""}`}
             />
           </div>
-          <span
-            className={`mt-4 block text-lg font-extralight leading-tight opacity-80 ${open ? "block" : "hidden"}`}
-          >
-            {answer}
-          </span>
+          <AnimatePresence>
+            {open && (
+              <motion.span
+                className={`mt-4 block text-lg font-extralight leading-tight opacity-80 ${open ? "block" : "hidden"}`}
+                initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                animate={{
+                  opacity: 1,
+                  height: "auto",
+                  marginTop: "16px",
+                }}
+                exit={{
+                  opacity: 0,
+                  height: 0,
+                  marginTop: 0,
+                }}
+              >
+                {answer}
+              </motion.span>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>
