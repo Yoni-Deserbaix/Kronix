@@ -11,30 +11,39 @@ export default function Brands() {
         </h2>
         <hr className="my-8 ml-8 h-0.5 w-12 border-0 bg-primary"></hr>
       </div>
-      <div className="mx-7 mt-8 flex flex-wrap justify-center gap-8 overflow-hidden rounded-2xl bg-bgCard py-7">
+      <div className="before:content[' '] mx-7 mt-8 flex overflow-hidden rounded-2xl bg-bgCard py-7">
         <motion.div
-          className="flex"
-          initial={{ translateX: "0%" }}
-          animate={{ translateX: "-100%" }}
-          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+          initial={{ translateX: 0 }}
+          animate={{ translateX: "-50%" }}
+          transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+          className="flex flex-none gap-16 pr-16"
         >
-          <ul className="flex gap-8">
-            {brandsLogo.concat(brandsLogo).map((brand) => (
-              <li
-                key={`${brand.name}`}
-                className="flex flex-shrink-0 list-none items-center gap-3 md:gap-8"
+          <div className="flex gap-16">
+            {brandsLogo.map(({ name, src }, index) => (
+              <div
+                key={`${name}-${index}`}
+                className="flex w-auto flex-shrink-0 list-none items-center gap-3 md:gap-5"
               >
-                <img
-                  src={brand.src}
-                  alt={`${brand.name} logo`}
-                  className="size-6 md:size-10"
-                />
+                <img src={src} alt={`${name} logo`} className="h-10 w-10" />
                 <span className="text-xl font-semibold text-lightGray md:text-2xl">
-                  {brand.name}
+                  {name}
                 </span>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
+          <div className="flex gap-16">
+            {brandsLogo.map(({ name, src }, index) => (
+              <div
+                key={`${name}-duplicate-${index}`}
+                className="flex w-auto flex-shrink-0 list-none items-center gap-3 md:gap-5"
+              >
+                <img src={src} alt={`${name} logo`} className="h-10 w-10" />
+                <span className="text-xl font-semibold text-lightGray md:text-2xl">
+                  {name}
+                </span>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </div>
