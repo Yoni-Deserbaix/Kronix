@@ -14,22 +14,22 @@ export default function Brands() {
       <div className="mx-7 mt-8 flex flex-wrap justify-center gap-8 overflow-hidden rounded-2xl bg-bgCard py-7">
         <motion.div
           className="flex"
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
-          transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+          initial={{ translateX: "0%" }}
+          animate={{ translateX: "-100%" }}
+          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
         >
           <ul className="flex gap-8">
             {brandsLogo.concat(brandsLogo).map((brand) => (
               <li
                 key={`${brand.name}`}
-                className="flex flex-shrink-0 list-none items-center gap-8"
+                className="flex flex-shrink-0 list-none items-center gap-3 md:gap-8"
               >
                 <img
                   src={brand.src}
                   alt={`${brand.name} logo`}
-                  className="h-10 w-10"
+                  className="size-6 md:size-10"
                 />
-                <span className="text-2xl font-semibold text-lightGray">
+                <span className="text-xl font-semibold text-lightGray md:text-2xl">
                   {brand.name}
                 </span>
               </li>
