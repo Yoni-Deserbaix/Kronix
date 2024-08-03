@@ -19,22 +19,9 @@ export default function Brands() {
           className="flex flex-none gap-16 pr-16"
         >
           <div className="flex gap-16">
-            {brandsLogo.map(({ name, src }, index) => (
+            {brandsLogo.concat(brandsLogo).map(({ name, src }, index) => (
               <div
                 key={`${name}-${index}`}
-                className="flex w-auto flex-shrink-0 list-none items-center gap-3 md:gap-5"
-              >
-                <img src={src} alt={`${name} logo`} className="h-10 w-10" />
-                <span className="text-xl font-semibold text-lightGray md:text-2xl">
-                  {name}
-                </span>
-              </div>
-            ))}
-          </div>
-          <div className="flex gap-16">
-            {brandsLogo.map(({ name, src }, index) => (
-              <div
-                key={`${name}-duplicate-${index}`}
                 className="flex w-auto flex-shrink-0 list-none items-center gap-3 md:gap-5"
               >
                 <img src={src} alt={`${name} logo`} className="h-10 w-10" />
