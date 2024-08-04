@@ -1,3 +1,4 @@
+import { MagicCard } from "../components/animations/magicui/magic-card";
 import TitleDark from "../components/ui/TitleDark";
 import { NewsArticlesCards } from "../data.json";
 
@@ -11,9 +12,10 @@ export default function NewsArticles() {
         descriptionStyles="-mt-2 text-white opacity-100 font-light"
         className="mb-2 leading-tight tracking-tighter"
       />
+
       <div className="flex flex-wrap justify-center gap-7 pb-28 pt-16 md:pt-28">
         {NewsArticlesCards.map((card, index) => (
-          <div
+          <MagicCard
             key={index}
             className="flex h-auto w-[85%] flex-col rounded-2xl border border-primary border-opacity-30 bg-primary bg-opacity-[1%] text-white sm:w-[554px] sm:flex-row"
           >
@@ -31,7 +33,7 @@ export default function NewsArticles() {
                 {card.description}
               </p>
             </div>
-          </div>
+          </MagicCard>
         ))}
       </div>
     </div>
