@@ -2,7 +2,7 @@
 
 import { motion, useInView, Variants } from "framer-motion";
 import React, { ReactNode } from "react";
-import { cn } from "../../lib/utils";
+import { cn } from "../../../lib/utils";
 
 interface ElementPullUpProps {
   elements: ReactNode[];

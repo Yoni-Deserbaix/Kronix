@@ -1,4 +1,4 @@
-import TitleLight from "../components/TitleLight";
+import TitleLight from "../components/ui/TitleLight";
 
 export default function Testimonial() {
   return (

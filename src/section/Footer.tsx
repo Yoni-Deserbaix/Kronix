@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa6";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { TiSocialFacebook } from "react-icons/ti";
-import Button from "../components/Button";
+import Button from "../components/ui/Button";
 
 export default function Footer() {
   return (

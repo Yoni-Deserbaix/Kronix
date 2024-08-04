@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { VscChevronDown } from "react-icons/vsc";
-import TitleLight from "../components/TitleLight";
+import TitleLight from "../components/ui/TitleLight";
 import { faqData } from "../data.json";
 
 type FaqType = {

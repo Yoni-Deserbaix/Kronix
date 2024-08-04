@@ -1,4 +1,4 @@
-import TitleDark from "../components/TitleDark";
+import TitleDark from "../components/ui/TitleDark";
 import { NewsArticlesCards } from "../data.json";
 
 export default function NewsArticles() {

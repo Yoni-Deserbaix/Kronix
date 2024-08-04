@@ -1,7 +1,7 @@
-import Button from "../components/Button";
-import ElementPullUp from "../components/magicui/element-pull-up";
-import TextRevealByWord from "../components/magicui/text-reveal";
-import TitleDark from "../components/TitleDark";
+import Button from "../components/ui/Button";
+import ElementPullUp from "../components/ui/magicui/element-pull-up";
+import TextRevealByWord from "../components/ui/magicui/text-reveal";
+import TitleDark from "../components/ui/TitleDark";
 import { capabilitiesButtons, capabilitiesCards } from "../data.json";
 
 export default function Capabilities() {

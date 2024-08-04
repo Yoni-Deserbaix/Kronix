@@ -1,5 +1,5 @@
 import StarBackground from "../components/animations/StarBackground";
-import Button from "../components/Button";
+import Button from "../components/ui/Button";
 import "../index.css";
 
 export default function Hero() {

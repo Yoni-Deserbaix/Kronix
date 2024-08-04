@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
-import Button from "../components/Button";
+import Button from "../components/ui/Button";
 import { designData } from "../data.json";
 import "../index.css";
 export default function HowItWorks() {

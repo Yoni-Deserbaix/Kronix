@@ -1,5 +1,5 @@
-import Button from "../components/Button";
-import TitleDark from "../components/TitleDark";
+import Button from "../components/ui/Button";
+import TitleDark from "../components/ui/TitleDark";
 import { pricingCards } from "../data.json";
 
 export default function Pricing() {

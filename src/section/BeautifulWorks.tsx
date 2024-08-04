@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import TitleLight from "../components/TitleLight";
+import TitleLight from "../components/ui/TitleLight";
 import { worksImages } from "../data.json";
 
 export default function BeautifulWorks() {
