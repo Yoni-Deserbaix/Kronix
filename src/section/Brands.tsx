@@ -7,7 +7,7 @@ export default function Brands() {
     <div className="mt-20">
       <div className="inline-flex w-full items-center justify-center">
         <motion.hr
-          initial={{ translateX: "-100%", opacity: 0 }}
+          initial={{ translateX: "-50%", opacity: 0 }}
           animate={{ translateX: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "linear", delay: 1 }}
           className="my-8 mr-4 h-0.5 w-12 border-0 bg-primary md:mr-8"
@@ -16,7 +16,7 @@ export default function Brands() {
           <FadeDown delay={0.6}>TRUSTED BY AMAZING BRANDS</FadeDown>
         </h2>
         <motion.hr
-          initial={{ translateX: "100%", opacity: 0 }}
+          initial={{ translateX: "50%", opacity: 0 }}
           animate={{ translateX: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "linear", delay: 1 }}
           className="my-8 ml-4 h-0.5 w-12 border-0 bg-primary md:ml-8"

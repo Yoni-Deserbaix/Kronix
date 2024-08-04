@@ -54,11 +54,7 @@ export default function Header() {
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex justify-end p-4">
-            <button onClick={() => setIsMenuOpen(false)}>
-              <AiOutlineClose size={30} className="text-text" />
-            </button>
-          </div>
+          <div className="flex justify-end p-4"></div>
           <ul className="mx-8 flex flex-col items-start gap-8 font-normal">
             {headerList.map((item) => (
               <a
