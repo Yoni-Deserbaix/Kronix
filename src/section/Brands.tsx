@@ -1,15 +1,26 @@
 import { motion } from "framer-motion";
+import FadeDown from "../components/animations/FadeDown";
 import { brandsLogo } from "../data.json";
 
 export default function Brands() {
   return (
     <div className="mt-20">
       <div className="inline-flex w-full items-center justify-center">
-        <hr className="my-8 mr-8 h-0.5 w-12 border-0 bg-primary"></hr>
+        <motion.hr
+          initial={{ translateX: "-100%", opacity: 0 }}
+          animate={{ translateX: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "linear", delay: 1 }}
+          className="my-8 mr-8 h-0.5 w-12 border-0 bg-primary"
+        ></motion.hr>
         <h2 className="text-center font-medium text-white">
-          TRUSTED BY AMAZING BRANDS
+          <FadeDown delay={0.4}>TRUSTED BY AMAZING BRANDS</FadeDown>
         </h2>
-        <hr className="my-8 ml-8 h-0.5 w-12 border-0 bg-primary"></hr>
+        <motion.hr
+          initial={{ translateX: "100%", opacity: 0 }}
+          animate={{ translateX: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "linear", delay: 1 }}
+          className="my-8 ml-8 h-0.5 w-12 border-0 bg-primary"
+        ></motion.hr>
       </div>
       <div className="before:content[' '] mx-7 mt-8 flex overflow-hidden rounded-2xl bg-bgCard py-7">
         <motion.div
