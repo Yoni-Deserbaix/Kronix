@@ -1,4 +1,3 @@
-"use client";
 import { motion, useInView } from "framer-motion";
 import React from "react";
 
@@ -7,7 +6,10 @@ type FadeOnScrollType = {
   delay?: number;
 };
 
-const FadeOnScroll = ({ children, delay = 0 }: FadeOnScrollType) => {
+export default function FadeOnScroll({
+  children,
+  delay = 0,
+}: FadeOnScrollType) {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
 
@@ -27,6 +29,4 @@ const FadeOnScroll = ({ children, delay = 0 }: FadeOnScrollType) => {
       {children}
     </motion.div>
   );
-};
-
-export default FadeOnScroll;
+}
