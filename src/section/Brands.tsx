@@ -10,19 +10,24 @@ export default function Brands() {
           initial={{ translateX: "-100%", opacity: 0 }}
           animate={{ translateX: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "linear", delay: 1 }}
-          className="my-8 mr-8 h-0.5 w-12 border-0 bg-primary"
+          className="my-8 mr-4 h-0.5 w-12 border-0 bg-primary md:mr-8"
         ></motion.hr>
-        <h2 className="text-center font-medium text-white">
-          <FadeDown delay={0.4}>TRUSTED BY AMAZING BRANDS</FadeDown>
+        <h2 className="text-center text-sm font-medium text-white md:text-base">
+          <FadeDown delay={0.6}>TRUSTED BY AMAZING BRANDS</FadeDown>
         </h2>
         <motion.hr
           initial={{ translateX: "100%", opacity: 0 }}
           animate={{ translateX: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "linear", delay: 1 }}
-          className="my-8 ml-8 h-0.5 w-12 border-0 bg-primary"
+          className="my-8 ml-4 h-0.5 w-12 border-0 bg-primary md:ml-8"
         ></motion.hr>
       </div>
-      <div className="before:content[' '] mx-7 mt-8 flex overflow-hidden rounded-2xl bg-bgCard py-7">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="mx-7 mt-8 flex overflow-hidden rounded-2xl bg-bgCard py-7"
+      >
         <motion.div
           initial={{ translateX: 0 }}
           animate={{ translateX: "-50%" }}
@@ -43,7 +48,7 @@ export default function Brands() {
             ))}
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 }
