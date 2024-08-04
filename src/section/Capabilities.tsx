@@ -1,15 +1,18 @@
 import Button from "../components/Button";
+import TextRevealByWord from "../components/magicui/text-reveal";
 import TitleDark from "../components/TitleDark";
 import { capabilitiesButtons, capabilitiesCards } from "../data.json";
 
 export default function Capabilities() {
   return (
     <div className="text-white" id="benefits">
-      <TitleDark
-        category="our capabilities"
-        title="We can help you with..."
-        className=""
-      />
+      <TitleDark category="our capabilities" title="" />
+      <div className="left-1/2 mx-auto flex justify-center text-center">
+        <TextRevealByWord
+          text="We can help you with..."
+          className="mx-auto text-center"
+        />
+      </div>
       <div className="flex flex-wrap justify-center gap-2 py-12">
         {capabilitiesButtons.map((item) => (
           <Button
