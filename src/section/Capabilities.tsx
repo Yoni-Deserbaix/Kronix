@@ -1,9 +1,17 @@
 import Button from "../components/Button";
+import ElementPullUp from "../components/magicui/element-pull-up";
 import TextRevealByWord from "../components/magicui/text-reveal";
 import TitleDark from "../components/TitleDark";
 import { capabilitiesButtons, capabilitiesCards } from "../data.json";
 
 export default function Capabilities() {
+  const elements = capabilitiesButtons.map((item, index) => (
+    <Button
+      key={index}
+      className="cursor-default px-6 py-3 text-xs md:h-[49.19px] md:px-10 md:text-sm"
+      text={item.name}
+    />
+  ));
   return (
     <div className="text-white" id="benefits">
       <TitleDark category="our capabilities" title="" />
@@ -13,14 +21,8 @@ export default function Capabilities() {
           className="mx-auto text-center"
         />
       </div>
-      <div className="flex flex-wrap justify-center gap-2 py-12">
-        {capabilitiesButtons.map((item) => (
-          <Button
-            key={item.name}
-            className="cursor-default px-6 py-3 text-xs md:h-[49.19px] md:px-10 md:text-sm"
-            text={item.name}
-          />
-        ))}
+      <div className="flex flex-wrap justify-center gap-2 pb-56 pt-12">
+        <ElementPullUp elements={elements} />
       </div>
       <div className="mx-12 flex flex-col items-center justify-evenly py-16 text-start md:flex-row md:gap-20">
         <div className="flex flex-col md:w-[606px]">
