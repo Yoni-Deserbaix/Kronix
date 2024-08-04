@@ -7,6 +7,7 @@ import {
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { TiSocialFacebook } from "react-icons/ti";
 import Button from "../components/ui/Button";
+import Logo from "../components/ui/Logo";
 
 export default function Footer() {
   return (
@@ -35,9 +36,7 @@ export default function Footer() {
         <div className="mt-72">
           <div className="flex flex-col justify-between gap-10 md:flex-row">
             <div className="flex-col">
-              <h2 className="text-3xl font-bold">
-                Kro<span className="text-primary">nix</span>
-              </h2>
+              <Logo />
               <p className="pt-8 font-light md:max-w-[311px]">
                 Kronix - the leading digital agency based in the UK, working
                 with top-tier clients, from start-ups to enterprises.
