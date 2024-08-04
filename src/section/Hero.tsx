@@ -65,7 +65,7 @@ export default function Hero() {
         <div>
           {/* Right Star */}
           <motion.div
-            className="absolute right-5 top-2 -translate-x-1/2 -translate-y-1/2 transform md:right-[5%] md:top-[30%]"
+            className="absolute -top-10 right-28 -translate-x-1/2 -translate-y-1/2 transform md:right-[5%] md:top-[30%]"
             variants={starVariants}
             animate={{ ...starVariants.floating1, ...starVariants.flicker }}
           >
@@ -81,7 +81,7 @@ export default function Hero() {
           </motion.div>
           {/* Bottom Star */}
           <motion.div
-            className="md:top-11/12 absolute top-[110%] -translate-x-1/2 -translate-y-1/2 transform md:right-1/3"
+            className="md:top-11/12 absolute right-28 top-[110%] -translate-x-1/2 -translate-y-1/2 transform md:right-1/3"
             variants={starVariants}
             animate={{ ...starVariants.floating3, ...starVariants.flicker }}
           >
