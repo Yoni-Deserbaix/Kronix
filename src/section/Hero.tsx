@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="relative mt-20">
       <div className="z-10 flex flex-col items-center justify-center text-center text-white">
-        <h1 className="z-10 text-5xl font-bold md:text-8xl md:leading-[7rem]">
+        <h1 className="z-10 text-5xl font-bold md:leading-[5rem] lg:text-7xl">
           <FadeUp delay={0}>
             Bringing Your <br />
             Dream Into{" "}
