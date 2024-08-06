@@ -1,13 +1,25 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import FadeOnScroll from "../components/animations/FadeOnScroll";
 import Button from "../components/ui/Button";
 import TitleDark from "../components/ui/TitleDark";
 import { pricingCards } from "../data.json";
 
 export default function Pricing() {
+  const [isMobile, setIsMobile] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1128);
+    };
+
+    handleResize(); // Check initial screen size
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div>
       <TitleDark
@@ -21,11 +33,15 @@ export default function Pricing() {
       >
         {pricingCards.map((card, index) => {
           return (
-            <FadeOnScroll key={index} delay={index * 0.2}>
+            <FadeOnScroll key={index} delay={index * 0.3}>
               <motion.div
                 ref={ref}
-                animate={isInView && { scale: index === 1 ? 1.05 : 0.95 }}
-                transition={{ duration: 0.5, delay: 1.2 }}
+                animate={
+                  isInView && !isMobile
+                    ? { scale: index === 1 ? 1.05 : 0.95 }
+                    : {}
+                }
+                transition={{ duration: 0.6, delay: 1.5 }}
                 className={`mx-10 h-auto rounded-2xl border border-primary border-opacity-30 bg-transparent py-10 text-white md:mx-0 md:max-w-[360px]`}
               >
                 <div className="px-8">
