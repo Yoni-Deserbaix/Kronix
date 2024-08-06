@@ -14,14 +14,14 @@ export default function Hero() {
             <span className="font-jarkarta text-primary">Reality</span>
           </FadeUp>
         </h1>
-        <p className="mt-8 w-3/4 font-[250] opacity-80 md:mt-12 md:max-w-[500px]">
+        <p className="opacity-8 mt-4 w-3/4 font-[250] md:max-w-[500px]">
           <FadeUp delay={0.2}>
             We increase revenue and ensure sustainable long-term growth for your
             business through powerful Webflow websites.
           </FadeUp>
         </p>
         <FadeUp delay={0.4}>
-          <Button text="Book A Meeting" className="mt-10 h-[56px] w-[149px]" />
+          <Button text="Book A Meeting" className="mt-8 h-[56px] w-[149px]" />
         </FadeUp>
 
         {/* Glow effect background */}
