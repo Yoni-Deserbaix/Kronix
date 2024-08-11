@@ -1,20 +1,24 @@
-import { useState } from "react";
-
 import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
 import { VscChevronDown } from "react-icons/vsc";
 import TitleLight from "../components/ui/TitleLight";
 import { faqData } from "../data.json";
 
-type FaqType = {
+type AccordionType = {
   question: string;
   answer: string;
+  open: boolean;
+  onClick: () => void;
 };
 
-const AccordionItem = ({ question, answer }: FaqType) => {
-  const [open, setOpen] = useState<boolean>(false);
-
+export const AccordionItem = ({
+  question,
+  answer,
+  open,
+  onClick,
+}: AccordionType) => {
   return (
-    <div onClick={() => setOpen(!open)}>
+    <div onClick={onClick}>
       <div className="mx-6 flex cursor-pointer flex-row items-center gap-10 rounded-3xl bg-background px-7 py-5 text-start text-lg text-white md:py-6 md:text-2xl">
         <div className="w-full">
           <div className="flex items-center justify-between">
@@ -27,7 +31,7 @@ const AccordionItem = ({ question, answer }: FaqType) => {
           <AnimatePresence>
             {open && (
               <motion.span
-                className={`mt-4 block text-lg font-extralight leading-tight opacity-80 ${open ? "block" : "hidden"}`}
+                className="mt-4 block text-lg font-extralight leading-tight opacity-80"
                 initial={{ opacity: 0, height: 0, marginTop: 0 }}
                 animate={{
                   opacity: 1,
@@ -51,6 +55,12 @@ const AccordionItem = ({ question, answer }: FaqType) => {
 };
 
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleAccordionClick = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div
       className="flex flex-col items-center justify-center pb-72 pt-28 text-center"
@@ -58,7 +68,7 @@ export default function FAQ() {
     >
       <TitleLight
         title="FAQ's"
-        description=" Providing answers to your questions"
+        description="Providing answers to your questions"
       />
       <div className="mt-12 flex w-full max-w-2xl flex-col gap-4 px-4 md:mt-20">
         {faqData.map((faq, index) => (
@@ -66,6 +76,8 @@ export default function FAQ() {
             key={index}
             question={faq.question}
             answer={faq.answer}
+            open={openIndex === index}
+            onClick={() => handleAccordionClick(index)}
           />
         ))}
         <div className="mx-auto w-[85%] md:w-11/12">
