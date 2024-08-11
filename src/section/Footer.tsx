@@ -1,19 +1,30 @@
-import {
-  FaCircleArrowRight,
-  FaDribbble,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa6";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+import { FaDribbble, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaCircleArrowRight } from "react-icons/fa6";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { TiSocialFacebook } from "react-icons/ti";
 import Button from "../components/ui/Button";
 import Logo from "../components/ui/Logo";
 
 export default function Footer() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [300, -270]);
+
   return (
     <div>
-      <div className="-my-48 rounded-[2rem] bg-background text-center text-white">
-        <div className="">
+      <motion.div
+        className="-z-50 -my-48 rounded-[2rem] bg-background text-center text-white"
+        ref={containerRef}
+        style={{ translateY }}
+      >
+        <div>
           <h1 className="mx-auto pt-16 text-4xl font-bold tracking-tighter md:text-7xl">
             Become part of the
             <br /> design revolution
@@ -31,7 +42,7 @@ export default function Footer() {
             className="mx-auto mt-12 h-14 w-[185px]"
           />
         </div>
-      </div>
+      </motion.div>
       <div className="mx-8 text-white">
         <div className="mt-72">
           <div className="flex flex-col justify-between gap-10 md:flex-row">
