@@ -67,7 +67,7 @@ export default function Header() {
           </div>
         </div>
         <div
-          className={`top-18 fixed right-0 z-50 h-screen w-full bg-background text-2xl text-white transition-transform lg:hidden ${
+          className={`top-18 fixed right-0 z-50 h-screen w-full bg-background text-2xl text-white transition-transform duration-500 ease-in-out lg:hidden ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
