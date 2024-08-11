@@ -1,15 +1,18 @@
+import FadeOnScroll from "../components/animations/FadeOnScroll";
 import TitleLight from "../components/ui/TitleLight";
 
 export default function Testimonial() {
   return (
     <div className="py-20 text-center text-background">
       <p className="text-lg font-normal">TESTIMONIAL</p>
-      <TitleLight
-        title={`Customer is Our Top \n Priority`}
-        titleStyles="tracking-normal font-[750]"
-        description={`We survey all of our clients, the results of which go directly \n to our CEO.`}
-        descriptionStyles="opacity-100"
-      />
+      <FadeOnScroll>
+        <TitleLight
+          title={`Customer is Our Top \n Priority`}
+          titleStyles="tracking-normal font-[750]"
+          description={`We survey all of our clients, the results of which go directly \n to our CEO.`}
+          descriptionStyles="opacity-100"
+        />
+      </FadeOnScroll>
       <div className="mx-8 my-12 mb-36 flex justify-center">
         <div className="flex h-auto w-full max-w-[1000px] flex-col justify-between rounded-[40px] border border-borderGray bg-bgGray shadow-md lg:h-[485px] lg:flex-row">
           <div className="flex flex-col items-start p-8 text-start text-background md:px-14">
