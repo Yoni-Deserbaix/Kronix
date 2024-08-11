@@ -1,8 +1,8 @@
 import FadeLeft from "../components/animations/FadeLeft";
+import FadeOnScroll from "../components/animations/FadeOnScroll";
 import FadeRight from "../components/animations/FadeRight";
 import ElementPullUp from "../components/animations/magicui/element-pull-up";
 import TextRevealByWord from "../components/animations/magicui/text-reveal";
-import ScaleOnScroll from "../components/animations/ScaleOnScroll";
 import Button from "../components/ui/Button";
 import TitleDark from "../components/ui/TitleDark";
 import { capabilitiesButtons, capabilitiesCards } from "../data.json";
@@ -57,7 +57,7 @@ export default function Capabilities() {
             className="border-1 border border-primary border-opacity-5 px-8 py-12"
             key={index}
           >
-            <ScaleOnScroll delay={index * 0.1}>
+            <FadeOnScroll delay={index * 0.1}>
               <img
                 src={card.image}
                 className="mb-4 h-10 w-10"
@@ -67,7 +67,7 @@ export default function Capabilities() {
               <p className="text-md font max-w-xs text-darkGray">
                 {card.description}
               </p>
-            </ScaleOnScroll>
+            </FadeOnScroll>
           </div>
         ))}
       </div>
