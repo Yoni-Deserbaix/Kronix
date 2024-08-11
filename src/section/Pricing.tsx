@@ -22,11 +22,14 @@ export default function Pricing() {
 
   return (
     <div>
-      <TitleDark
-        category="Clear & Simple Pricing"
-        title="Simple pricing to level up your brand."
-        description={`Senior experts. On-demand requests. Fast\n turnarounds. Flat monthly fee. Cancel anytime.`}
-      />
+      <FadeOnScroll>
+        <TitleDark
+          category="Clear & Simple Pricing"
+          title="Simple pricing to level up your brand."
+          description={`Senior experts. On-demand requests. Fast\n turnarounds. Flat monthly fee. Cancel anytime.`}
+          className="mx-7 md:mx-0"
+        />
+      </FadeOnScroll>
       <div
         id="pricing"
         className="mt-4 flex flex-col items-center gap-8 py-12 md:mt-16 md:flex-row md:flex-wrap md:justify-center"
