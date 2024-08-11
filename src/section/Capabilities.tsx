@@ -2,6 +2,7 @@ import FadeLeft from "../components/animations/FadeLeft";
 import FadeRight from "../components/animations/FadeRight";
 import ElementPullUp from "../components/animations/magicui/element-pull-up";
 import TextRevealByWord from "../components/animations/magicui/text-reveal";
+import ScaleOnScroll from "../components/animations/ScaleOnScroll";
 import Button from "../components/ui/Button";
 import TitleDark from "../components/ui/TitleDark";
 import { capabilitiesButtons, capabilitiesCards } from "../data.json";
@@ -51,16 +52,22 @@ export default function Capabilities() {
         className="mx-auto grid w-[85%] grid-cols-1 py-14 text-start sm:grid-cols-2 md:w-full lg:grid-cols-3"
         id="services"
       >
-        {capabilitiesCards.map((card) => (
+        {capabilitiesCards.map((card, index) => (
           <div
             className="border-1 border border-primary border-opacity-5 px-8 py-12"
-            key={card.title}
+            key={index}
           >
-            <img src={card.image} className="mb-4 h-10 w-10" alt={card.title} />
-            <h5 className="mb-4 pl-2 text-xl">{card.title}</h5>
-            <p className="text-md font max-w-xs text-darkGray">
-              {card.description}
-            </p>
+            <ScaleOnScroll delay={index * 0.1}>
+              <img
+                src={card.image}
+                className="mb-4 h-10 w-10"
+                alt={card.title}
+              />
+              <h5 className="mb-4 pl-2 text-xl">{card.title}</h5>
+              <p className="text-md font max-w-xs text-darkGray">
+                {card.description}
+              </p>
+            </ScaleOnScroll>
           </div>
         ))}
       </div>
