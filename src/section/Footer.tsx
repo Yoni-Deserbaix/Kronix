@@ -15,7 +15,7 @@ export default function Footer() {
     offset: ["start end", "end start"],
   });
 
-  const translateY = useTransform(scrollYProgress, [0, 1], [300, -270]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [300, -100]);
 
   return (
     <div>
