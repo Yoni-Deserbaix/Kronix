@@ -8,11 +8,6 @@ import TitleDark from "../components/ui/TitleDark";
 import { capabilitiesButtons, capabilitiesCards } from "../data.json";
 
 export default function Capabilities() {
-  const screenWidth = typeof window !== "undefined" ? window.innerWidth : 1024;
-
-  const AnimationComponentLeft = screenWidth < 768 ? FadeOnScroll : FadeLeft;
-  const AnimationComponentRight = screenWidth < 768 ? FadeOnScroll : FadeRight;
-
   const elements = capabilitiesButtons.map((item, index) => (
     <Button
       key={index}
@@ -21,7 +16,7 @@ export default function Capabilities() {
     />
   ));
   return (
-    <div className="overflow-hidden text-white" id="benefits">
+    <div className="text-white" id="benefits">
       <TitleDark category="our capabilities" title="" />
       <div className="left-1/2 mx-auto flex justify-center text-center">
         <TextRevealByWord
@@ -33,15 +28,15 @@ export default function Capabilities() {
         <ElementPullUp elements={elements} />
       </div>
       <div className="mx-12 flex flex-col items-center justify-evenly py-16 text-start md:flex-row md:gap-20">
-        <AnimationComponentLeft>
+        <FadeLeft>
           <div className="flex flex-col md:w-[606px]">
             <span className="text-sm font-light text-primary">BENEFITS</span>
             <h1 className="mt-4 text-4xl font-bold md:text-5xl">
               The design subscription that connects you to your dream team{" "}
             </h1>
           </div>
-        </AnimationComponentLeft>
-        <AnimationComponentRight>
+        </FadeLeft>
+        <FadeRight>
           <div className="flex translate-y-8 flex-col md:w-[536px] md:translate-y-20 md:pb-16">
             <p className="mt-4 text-lg font-extralight opacity-80 md:text-xl">
               A subscription can alleviate the stress of staffing, managing
@@ -51,7 +46,7 @@ export default function Capabilities() {
             </p>
             <Button text="See Pricing" className="mt-10 h-[56px] w-[149px]" />
           </div>
-        </AnimationComponentRight>
+        </FadeRight>
       </div>
       <div
         className="mx-auto grid w-[85%] grid-cols-1 py-14 text-start sm:grid-cols-2 md:w-full lg:grid-cols-3"
