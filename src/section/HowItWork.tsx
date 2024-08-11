@@ -7,7 +7,7 @@ import { designData } from "../data.json";
 import "../index.css";
 export default function HowItWorks() {
   return (
-    <div className="pt-32 text-white" id="process">
+    <div className="pt-32 text-white" id="process overflow-hidden">
       <div className="mx-12 flex flex-col items-center justify-evenly md:flex-row md:gap-20">
         <FadeLeft>
           <div className="flex flex-col md:w-[606px]">
