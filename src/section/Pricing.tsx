@@ -102,7 +102,7 @@ export default function Pricing() {
                       );
                     })}
                   </ul>
-                  <div className="flex flex-col md:gap-4">
+                  <div className="flex flex-col gap-4">
                     <Button
                       text="Book A Call"
                       className="mx-2 border border-primary bg-transparent py-4 font-[400] text-white"
