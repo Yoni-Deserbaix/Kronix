@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import FadeLeft from "../components/animations/FadeLeft";
+import FadeOnScroll from "../components/animations/FadeOnScroll";
 import FadeRight from "../components/animations/FadeRight";
 import Button from "../components/ui/Button";
 import { designData } from "../data.json";
@@ -31,27 +32,29 @@ export default function HowItWorks() {
       </div>
       <div className="mx-8 mt-36 flex flex-col items-start justify-center pb-52 md:mt-52 md:flex-row">
         {designData.map((item, index) => (
-          <div key={index} className="flex-1 px-4">
-            <div className="flex items-center justify-start">
-              <div className="flex size-12 items-center justify-center rounded-full bg-primary md:mb-4 lg:size-20">
-                <img
-                  src={item.src}
-                  alt={item.name}
-                  className="p-1 lg:size-12"
-                />
-              </div>
-              {index < 2 && (
-                <div className="relative mb-4 mr-2 flex w-[75%] items-center">
-                  <hr className="hidden h-0.5 flex-1 border-0 bg-primary md:flex" />
-                  <FaArrowRight className="absolute -right-2 hidden text-primary md:flex" />
+          <FadeOnScroll key={index} delay={index * 0.2}>
+            <div className="flex-1 px-4">
+              <div className="flex items-center justify-start">
+                <div className="flex size-12 items-center justify-center rounded-full bg-primary md:mb-4 lg:size-20">
+                  <img
+                    src={item.src}
+                    alt={item.name}
+                    className="p-1 lg:size-12"
+                  />
                 </div>
-              )}
+                {index < 2 && (
+                  <div className="relative mb-4 mr-2 flex w-[75%] items-center">
+                    <hr className="hidden h-0.5 flex-1 border-0 bg-primary md:flex" />
+                    <FaArrowRight className="absolute -right-2 hidden text-primary md:flex" />
+                  </div>
+                )}
+              </div>
+              <h3 className="mt-6 text-xl font-semibold">{item.title}</h3>
+              <p className="mb-8 w-2/3 font-extralight opacity-80 md:my-6">
+                {item.caption}
+              </p>
             </div>
-            <h3 className="mt-6 text-xl font-semibold">{item.title}</h3>
-            <p className="mb-8 w-2/3 font-extralight opacity-80 md:my-6">
-              {item.caption}
-            </p>
-          </div>
+          </FadeOnScroll>
         ))}
       </div>
     </div>
