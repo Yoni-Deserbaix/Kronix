@@ -1,6 +1,8 @@
-import Button from "../components/ui/Button";
+import FadeLeft from "../components/animations/FadeLeft";
+import FadeRight from "../components/animations/FadeRight";
 import ElementPullUp from "../components/animations/magicui/element-pull-up";
 import TextRevealByWord from "../components/animations/magicui/text-reveal";
+import Button from "../components/ui/Button";
 import TitleDark from "../components/ui/TitleDark";
 import { capabilitiesButtons, capabilitiesCards } from "../data.json";
 
@@ -25,21 +27,25 @@ export default function Capabilities() {
         <ElementPullUp elements={elements} />
       </div>
       <div className="mx-12 flex flex-col items-center justify-evenly py-16 text-start md:flex-row md:gap-20">
-        <div className="flex flex-col md:w-[606px]">
-          <span className="text-sm font-light text-primary">BENEFITS</span>
-          <h1 className="mt-4 text-4xl font-bold md:text-5xl">
-            The design subscription that connects you to your dream team{" "}
-          </h1>
-        </div>
-        <div className="flex translate-y-8 flex-col md:w-[536px] md:translate-y-20 md:pb-16">
-          <p className="mt-4 text-lg font-extralight opacity-80 md:text-xl">
-            A subscription can alleviate the stress of staffing, managing
-            expenses, or make design calls like a Creative Director. We partner
-            with you to ensure that your design elevates your brand to new
-            levels.
-          </p>
-          <Button text="See Pricing" className="mt-10 h-[56px] w-[149px]" />
-        </div>
+        <FadeLeft>
+          <div className="flex flex-col md:w-[606px]">
+            <span className="text-sm font-light text-primary">BENEFITS</span>
+            <h1 className="mt-4 text-4xl font-bold md:text-5xl">
+              The design subscription that connects you to your dream team{" "}
+            </h1>
+          </div>
+        </FadeLeft>
+        <FadeRight>
+          <div className="flex translate-y-8 flex-col md:w-[536px] md:translate-y-20 md:pb-16">
+            <p className="mt-4 text-lg font-extralight opacity-80 md:text-xl">
+              A subscription can alleviate the stress of staffing, managing
+              expenses, or make design calls like a Creative Director. We
+              partner with you to ensure that your design elevates your brand to
+              new levels.
+            </p>
+            <Button text="See Pricing" className="mt-10 h-[56px] w-[149px]" />
+          </div>
+        </FadeRight>
       </div>
       <div
         className="mx-auto grid w-[85%] grid-cols-1 py-14 text-start sm:grid-cols-2 md:w-full lg:grid-cols-3"
