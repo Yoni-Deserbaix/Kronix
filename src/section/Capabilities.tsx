@@ -21,7 +21,7 @@ export default function Capabilities() {
     />
   ));
   return (
-    <div className="text-white" id="benefits">
+    <div className="overflow-hidden text-white" id="benefits">
       <TitleDark category="our capabilities" title="" />
       <div className="left-1/2 mx-auto flex justify-center text-center">
         <TextRevealByWord
