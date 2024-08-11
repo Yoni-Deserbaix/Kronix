@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import FadeLeft from "../components/animations/FadeLeft";
 import Button from "../components/ui/Button";
 import { designData } from "../data.json";
 import "../index.css";
@@ -6,22 +7,26 @@ export default function HowItWorks() {
   return (
     <div className="pt-32 text-white" id="process">
       <div className="mx-12 flex flex-col items-center justify-evenly md:flex-row md:gap-20">
-        <div className="flex flex-col md:w-[606px]">
-          <span className="text-sm text-primary">HOW WE WORK</span>
-          <h1 className="mt-4 text-4xl font-bold md:text-5xl">
-            Get a dedicated design team at a fraction of the cost.
-          </h1>
-        </div>
-        <div className="flex translate-y-6 flex-col md:w-[500px] md:translate-y-12">
-          <p className="mt-4 text-lg font-extralight opacity-80 md:text-xl">
-            Grow your brand with high-quality design for a flat monthly fee.
-            Work with senior designers. Subscribe and make as many requests as
-            you need - no limits.
-          </p>
-          <a href="#pricing">
-            <Button text="See Pricing" className="mt-10 h-[56px] w-36 px-2" />
-          </a>
-        </div>
+        <FadeLeft>
+          <div className="flex flex-col md:w-[606px]">
+            <span className="text-sm text-primary">HOW WE WORK</span>
+            <h1 className="mt-4 text-4xl font-bold md:text-5xl">
+              Get a dedicated design team at a fraction of the cost.
+            </h1>
+          </div>
+        </FadeLeft>
+        <>
+          <div className="flex translate-y-6 flex-col md:w-[500px]">
+            <p className="mt-4 text-lg font-extralight opacity-80 md:text-xl">
+              Grow your brand with high-quality design for a flat monthly fee.
+              Work with senior designers. Subscribe and make as many requests as
+              you need - no limits.
+            </p>
+            <a href="#pricing">
+              <Button text="See Pricing" className="mt-10 h-[56px] w-36 px-2" />
+            </a>
+          </div>
+        </>
       </div>
       <div className="mx-8 mt-36 flex flex-col items-start justify-center pb-52 md:mt-52 md:flex-row">
         {designData.map((item, index) => (
