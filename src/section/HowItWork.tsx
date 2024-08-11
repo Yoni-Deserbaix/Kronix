@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import FadeLeft from "../components/animations/FadeLeft";
+import FadeRight from "../components/animations/FadeRight";
 import Button from "../components/ui/Button";
 import { designData } from "../data.json";
 import "../index.css";
@@ -15,7 +16,7 @@ export default function HowItWorks() {
             </h1>
           </div>
         </FadeLeft>
-        <>
+        <FadeRight>
           <div className="flex translate-y-6 flex-col md:w-[500px]">
             <p className="mt-4 text-lg font-extralight opacity-80 md:text-xl">
               Grow your brand with high-quality design for a flat monthly fee.
@@ -26,7 +27,7 @@ export default function HowItWorks() {
               <Button text="See Pricing" className="mt-10 h-[56px] w-36 px-2" />
             </a>
           </div>
-        </>
+        </FadeRight>
       </div>
       <div className="mx-8 mt-36 flex flex-col items-start justify-center pb-52 md:mt-52 md:flex-row">
         {designData.map((item, index) => (
