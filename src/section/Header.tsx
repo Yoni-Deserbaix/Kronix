@@ -77,8 +77,11 @@ export default function Header() {
               <a
                 href={`#${item.id}`}
                 key={item.id}
+                onClick={() => {
+                  setIsMenuOpen(!isMenuOpen);
+                  toggleBurger();
+                }}
                 className="w-full cursor-pointer underline underline-offset-8 transition-all hover:text-primary"
-                onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
               </a>
