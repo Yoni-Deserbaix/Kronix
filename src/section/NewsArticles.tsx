@@ -1,3 +1,4 @@
+import FadeOnScroll from "../components/animations/FadeOnScroll";
 import { MagicCard } from "../components/animations/magicui/magic-card";
 import TitleDark from "../components/ui/TitleDark";
 import { NewsArticlesCards } from "../data.json";
@@ -5,13 +6,15 @@ import { NewsArticlesCards } from "../data.json";
 export default function NewsArticles() {
   return (
     <div>
-      <TitleDark
-        category="blogs"
-        title="News & Artciles"
-        description="Best Articles to get started"
-        descriptionStyles="-mt-2 text-white opacity-100 font-light"
-        className="mb-2 leading-tight tracking-tighter"
-      />
+      <FadeOnScroll>
+        <TitleDark
+          category="blogs"
+          title="News & Artciles"
+          description="Best Articles to get started"
+          descriptionStyles="-mt-2 text-white opacity-100 font-light"
+          className="mb-2 leading-tight tracking-tighter"
+        />
+      </FadeOnScroll>
 
       <div className="flex flex-wrap justify-center gap-7 pb-28 pt-16 md:pt-28">
         {NewsArticlesCards.map((card, index) => (
