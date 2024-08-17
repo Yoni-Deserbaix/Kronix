@@ -80,14 +80,16 @@ export default function Footer() {
           <p className="pt-4 md:pt-8 md:text-lg">
             Jump on a membership and start <br /> requesting designs right away!
           </p>
-          <Button
-            text={
-              <a href="#pricing" className="flex items-center">
-                See Pricing <FaCircleArrowRight className="ml-3" />
-              </a>
-            }
-            className="mx-auto mt-12 h-14 w-[185px]"
-          />
+          <a href="#pricing" className="flex items-center">
+            <Button
+              text={
+                <>
+                  See Pricing <FaCircleArrowRight className="ml-3" />
+                </>
+              }
+              className="mx-auto mt-12 h-14 w-[185px]"
+            />
+          </a>
         </div>
       </motion.div>
       <div className="mx-8 text-white">
