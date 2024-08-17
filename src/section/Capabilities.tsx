@@ -15,10 +15,11 @@ export default function Capabilities() {
       text={item.name}
     />
   ));
+
   return (
     <div className="text-white" id="benefits">
       <TitleDark category="our capabilities" title="" />
-      <div className="left-1/2 mx-auto flex justify-center text-center">
+      <div className="flex justify-center text-center">
         <TextRevealByWord
           text="We can help you with..."
           className="mx-auto text-center"
@@ -27,18 +28,18 @@ export default function Capabilities() {
       <div className="flex flex-wrap justify-center gap-2 pb-56">
         <ElementPullUp elements={elements} />
       </div>
-      <div className="mx-12 flex flex-col items-center justify-evenly py-16 text-start md:flex-row md:gap-20">
+      <div className="mx-12 flex flex-col items-center justify-evenly py-16 text-start lg:flex-row lg:gap-20">
         <FadeLeft>
-          <div className="flex flex-col md:w-[606px]">
+          <div className="flex flex-col lg:w-[606px]">
             <span className="text-sm font-light text-primary">BENEFITS</span>
-            <h1 className="mt-4 text-4xl font-bold md:text-5xl">
-              The design subscription that connects you to your dream team{" "}
+            <h1 className="mt-4 text-3xl font-bold md:text-5xl">
+              The design subscription that connects you to your dream team
             </h1>
           </div>
         </FadeLeft>
         <FadeRight>
-          <div className="flex translate-y-8 flex-col md:w-[536px] md:translate-y-20 md:pb-16">
-            <p className="mt-4 text-lg font-extralight opacity-80 md:text-xl">
+          <div className="flex translate-y-8 flex-col md:pb-16 lg:max-w-[536px] lg:translate-y-20">
+            <p className="mt-4 font-extralight opacity-80 md:text-xl">
               A subscription can alleviate the stress of staffing, managing
               expenses, or make design calls like a Creative Director. We
               partner with you to ensure that your design elevates your brand to
@@ -55,11 +56,7 @@ export default function Capabilities() {
         {capabilitiesCards.map((card, index) => (
           <div className="border border-primary/5 px-8 py-12" key={index}>
             <FadeOnScroll delay={index * 0.1}>
-              <img
-                src={card.image}
-                className="mb-4 h-10 w-10"
-                alt={card.title}
-              />
+              <img src={card.image} className="mb-4 size-10" alt={card.title} />
               <h5 className="mb-4 pl-2 text-xl">{card.title}</h5>
               <p className="text-md max-w-xs text-darkGray">
                 {card.description}
