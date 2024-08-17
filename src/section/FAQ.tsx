@@ -31,7 +31,7 @@ export const AccordionItem = ({
           <AnimatePresence>
             {open && (
               <motion.span
-                className="mt-4 block text-lg font-extralight leading-tight opacity-80"
+                className="mt-4 block text-lg/tight font-extralight opacity-80"
                 initial={{ opacity: 0, height: 0, marginTop: 0 }}
                 animate={{
                   opacity: 1,

@@ -45,7 +45,7 @@ export default function Pricing() {
                     : {}
                 }
                 transition={{ duration: 0.6, delay: 1.5 }}
-                className={`mx-10 h-auto rounded-2xl border border-primary border-opacity-30 bg-transparent py-10 text-white md:mx-0 md:max-w-[360px]`}
+                className={`mx-10 h-auto rounded-2xl border border-primary/30 bg-transparent py-10 text-white md:mx-0 md:max-w-[360px]`}
               >
                 <div className="px-8">
                   <div className="flex gap-3">
@@ -63,7 +63,7 @@ export default function Pricing() {
                     {card.description}
                   </p>
                 </div>
-                <hr className="mx-auto my-6 h-[0.2px] w-[90%] border-0 bg-primary opacity-30" />
+                <hr className="mx-auto my-6 h-[0.2px] w-[90%] border-0 bg-primary/30" />
                 <div className="px-8">
                   <div className="my-4 text-4xl font-semibold text-primary md:text-5xl">
                     {card.price}
@@ -72,7 +72,7 @@ export default function Pricing() {
                     {card.note}
                   </p>
                 </div>
-                <hr className="mx-auto mb-6 mt-8 h-[0.2px] w-[90%] border-0 bg-primary opacity-30" />
+                <hr className="mx-auto mb-6 mt-8 h-[0.2px] w-[90%] border-0 bg-primary/30" />
                 <div className="px-8">
                   <ul className="text:base my-10 space-y-4 font-light md:text-xl">
                     {card.features.map((feature, featureIndex) => {
@@ -85,7 +85,7 @@ export default function Pricing() {
                           <img
                             src={card.star}
                             alt="star icon"
-                            className="h-6 w-6"
+                            className="size-6"
                           />
                           <span>
                             {card === pricingCards[1] && featureIndex === 0 ? (

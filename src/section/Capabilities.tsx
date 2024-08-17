@@ -53,10 +53,7 @@ export default function Capabilities() {
         id="services"
       >
         {capabilitiesCards.map((card, index) => (
-          <div
-            className="border-1 border border-primary border-opacity-5 px-8 py-12"
-            key={index}
-          >
+          <div className="border border-primary/5 px-8 py-12" key={index}>
             <FadeOnScroll delay={index * 0.1}>
               <img
                 src={card.image}
@@ -64,7 +61,7 @@ export default function Capabilities() {
                 alt={card.title}
               />
               <h5 className="mb-4 pl-2 text-xl">{card.title}</h5>
-              <p className="text-md font max-w-xs text-darkGray">
+              <p className="text-md max-w-xs text-darkGray">
                 {card.description}
               </p>
             </FadeOnScroll>

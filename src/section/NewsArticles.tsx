@@ -11,7 +11,7 @@ export default function NewsArticles() {
           category="blogs"
           title="News & Artciles"
           description="Best Articles to get started"
-          descriptionStyles="-mt-2 text-white opacity-100 font-light"
+          descriptionStyles="-mt-2"
           className="mb-2 leading-tight tracking-tighter"
         />
       </FadeOnScroll>
@@ -20,7 +20,7 @@ export default function NewsArticles() {
         {NewsArticlesCards.map((card, index) => (
           <MagicCard
             key={index}
-            className="flex h-auto w-[85%] flex-col rounded-2xl border border-primary border-opacity-30 bg-primary bg-opacity-[1%] text-white sm:w-[554px] sm:flex-row"
+            className="flex h-auto w-[85%] flex-col rounded-2xl border border-primary/30 bg-primary/[0.1%] text-white sm:w-[554px] sm:flex-row"
           >
             <img
               src={card.image}
