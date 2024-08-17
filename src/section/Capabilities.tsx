@@ -25,7 +25,7 @@ export default function Capabilities() {
           className="mx-auto text-center"
         />
       </div>
-      <div className="flex flex-wrap justify-center gap-2 pb-56">
+      <div className="mx-auto flex flex-wrap items-center justify-center gap-2 pb-56 lg:w-2/3">
         <ElementPullUp elements={elements} />
       </div>
       <div className="mx-12 flex flex-col items-center justify-evenly py-16 text-start lg:flex-row lg:gap-20">
