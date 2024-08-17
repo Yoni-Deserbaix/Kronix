@@ -26,7 +26,7 @@ export default function Brands() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="mx-7 mt-8 flex overflow-hidden rounded-2xl bg-bgCard py-7"
+        className="mx-7 mt-8 flex overflow-hidden rounded-2xl bg-bgCard py-4 md:py-7"
       >
         <motion.div
           initial={{ translateX: 0 }}
@@ -40,7 +40,7 @@ export default function Brands() {
                 key={`${name}-${index}`}
                 className="flex w-auto flex-shrink-0 list-none items-center gap-3 md:gap-5"
               >
-                <img src={src} alt={`${name} logo`} className="h-10 w-10" />
+                <img src={src} alt={`${name} logo`} className="size-10" />
                 <span className="text-xl font-semibold text-lightGray md:text-2xl">
                   {name}
                 </span>

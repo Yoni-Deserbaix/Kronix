@@ -11,7 +11,7 @@ export default function HowItWorks() {
   const AnimationComponentLeft = screenWidth < 768 ? FadeOnScroll : FadeLeft;
   const AnimationComponentRight = screenWidth < 768 ? FadeOnScroll : FadeRight;
   return (
-    <div className="pt-32 text-white" id="process overflow-hidden">
+    <div className="pb-52 pt-32 text-white" id="process overflow-hidden">
       <div className="mx-12 flex flex-col items-center justify-evenly lg:flex-row lg:gap-20">
         <AnimationComponentLeft>
           <div className="flex flex-col lg:w-[606px]">
@@ -34,7 +34,7 @@ export default function HowItWorks() {
           </div>
         </AnimationComponentRight>
       </div>
-      <div className="mx-8 mt-36 flex flex-col items-start justify-center pb-52 md:mt-52 md:flex-row">
+      <div className="mx-8 mt-36 flex flex-col items-start justify-center md:mt-52 md:flex-row">
         {designData.map((item, index) => (
           <FadeOnScroll key={index} delay={index * 0.2}>
             <div className="flex-1 px-4">

@@ -5,7 +5,7 @@ import { NewsArticlesCards } from "../data.json";
 
 export default function NewsArticles() {
   return (
-    <div>
+    <div className="pb-56">
       <FadeOnScroll>
         <TitleDark
           category="blogs"
