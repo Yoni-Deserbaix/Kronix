@@ -3,10 +3,10 @@ import TitleLight from "../components/ui/TitleLight";
 
 export default function Testimonial() {
   return (
-    <div className="py-20 text-center text-background">
-      <p className="text-lg font-normal">TESTIMONIAL</p>
+    <div className="pb-28 text-center text-background">
       <FadeOnScroll>
         <TitleLight
+          category="TESTIMONIAL"
           title={`Customer is Our Top \n Priority`}
           titleStyles="tracking-normal font-[750]"
           description={`We survey all of our clients, the results of which go directly \n to our CEO.`}

@@ -1,5 +1,6 @@
 type TitleType = {
   className?: string;
+  category?: string;
   title: string;
   description?: string;
   descriptionStyles?: string;
@@ -8,15 +9,17 @@ type TitleType = {
 
 export default function TitleLight({
   className,
+  category,
   title,
   description,
   descriptionStyles,
   titleStyles,
 }: TitleType) {
   return (
-    <div className={`text-center text-background ${className}`}>
+    <div className={`pt-28 text-center text-background ${className}`}>
+      <p className="text-lg font-normal uppercase">{category}</p>
       <h1
-        className={`text-3xl font-extrabold tracking-tighter md:text-5xl ${titleStyles}`}
+        className={`mt-4 text-3xl font-extrabold tracking-tighter md:text-5xl ${titleStyles}`}
       >
         {title &&
           title.split("\n").map((line, index) => (

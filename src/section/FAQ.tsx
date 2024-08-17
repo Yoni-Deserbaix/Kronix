@@ -63,7 +63,7 @@ export default function FAQ() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center pb-72 pt-28 text-center"
+      className="flex flex-col items-center justify-center pb-72 text-center"
       id="faq"
     >
       <TitleLight

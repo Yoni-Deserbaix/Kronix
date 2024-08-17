@@ -14,7 +14,7 @@ export default function TitleDark({
   descriptionStyles,
 }: TitleType) {
   return (
-    <div className={`pt-36 text-center text-white ${className}`}>
+    <div className={`pt-28 text-center text-white ${className}`}>
       <p className="text-lg font-normal uppercase text-primary">{category}</p>
       <h1 className="mx-auto mt-4 text-3xl font-bold leading-tight md:text-5xl">
         {title}
