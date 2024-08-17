@@ -5,7 +5,7 @@ import { worksImages } from "../data.json";
 
 export default function BeautifulWorks() {
   return (
-    <div className="pt-[4.9rem]" id="portfolio">
+    <div id="portfolio">
       <FadeOnScroll>
         <TitleLight
           title="Our Beautiful Works"
