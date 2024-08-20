@@ -25,7 +25,7 @@ export const AccordionItem = ({
             <span className="w-10/12 md:w-full">{question}</span>
             <VscChevronDown
               size={40}
-              className={`rounded-full bg-primary p-2 font-extralight text-background transition-transform duration-200 ease-linear ${open ? "rotate-180" : ""}`}
+              className={`rounded-full p-1 font-extralight text-primary transition-transform duration-200 ease-linear ${open ? "rotate-180" : ""}`}
             />
           </div>
           <AnimatePresence>
