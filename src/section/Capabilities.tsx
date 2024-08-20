@@ -17,7 +17,7 @@ export default function Capabilities() {
   ));
 
   return (
-    <div className="pb-56 text-white" id="benefits">
+    <div className="pb-28 text-white" id="benefits">
       <TitleDark category="our capabilities" title="" />
       <div className="flex justify-center text-center">
         <TextRevealByWord

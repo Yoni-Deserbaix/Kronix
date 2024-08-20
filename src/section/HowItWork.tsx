@@ -11,7 +11,7 @@ export default function HowItWorks() {
   const AnimationComponentLeft = screenWidth < 768 ? FadeOnScroll : FadeLeft;
   const AnimationComponentRight = screenWidth < 768 ? FadeOnScroll : FadeRight;
   return (
-    <div className="pb-52 pt-32 text-white" id="process overflow-hidden">
+    <div className="pb-28 pt-32 text-white" id="process overflow-hidden">
       <div className="mx-12 flex flex-col items-center justify-evenly lg:flex-row lg:gap-20">
         <AnimationComponentLeft>
           <div className="flex flex-col lg:w-[606px]">

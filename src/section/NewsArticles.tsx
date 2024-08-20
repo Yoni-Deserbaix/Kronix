@@ -5,7 +5,7 @@ import { NewsArticlesCards } from "../data.json";
 
 export default function NewsArticles() {
   return (
-    <div className="pb-56">
+    <div className="pb-28">
       <FadeOnScroll>
         <TitleDark
           category="blogs"
@@ -16,7 +16,7 @@ export default function NewsArticles() {
         />
       </FadeOnScroll>
 
-      <div className="flex flex-wrap justify-center gap-7 pb-28 pt-16 md:pt-28">
+      <div className="flex flex-wrap justify-center gap-7 pt-16 md:pt-28">
         {NewsArticlesCards.map((card, index) => (
           <MagicCard
             key={index}
