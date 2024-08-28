@@ -54,7 +54,10 @@ export default function Capabilities() {
         id="services"
       >
         {capabilitiesCards.map((card, index) => (
-          <div className="border border-primary/5 px-8 py-12" key={index}>
+          <div
+            className="border border-primary/5 px-8 py-12 transition-all hover:bg-bgCard/20"
+            key={index}
+          >
             <FadeOnScroll delay={index * 0.1}>
               <img src={card.image} className="mb-4 size-10" alt={card.title} />
               <h5 className="mb-4 pl-2 text-xl">{card.title}</h5>
