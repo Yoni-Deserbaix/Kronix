@@ -28,7 +28,7 @@ export default function Capabilities() {
       <div className="mx-auto flex flex-wrap items-center justify-center gap-2 pb-56 lg:w-2/3">
         <ElementPullUp elements={elements} />
       </div>
-      <div className="mx-12 flex flex-col items-center justify-evenly overflow-x-hidden py-16 text-start lg:flex-row lg:gap-20">
+      <div className="mx-12 flex flex-col items-center justify-evenly overflow-hidden py-16 text-start lg:flex-row lg:gap-20">
         <FadeLeft>
           <div className="flex flex-col lg:w-[606px]">
             <span className="text-sm text-primary">BENEFITS</span>
