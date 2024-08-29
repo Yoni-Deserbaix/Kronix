@@ -1,50 +1,103 @@
 import FadeOnScroll from "../components/animations/FadeOnScroll";
-import TitleLight from "../components/ui/TitleLight";
+import Marquee from "../components/animations/magicui/marquee";
+import TitleDark from "../components/ui/TitleDark";
+import { cn } from "../lib/utils";
+
+const reviews = [
+  {
+    name: "Jack",
+    username: "@jack",
+    body: "Kronix is the best digital agency I've worked with. Highly recommended for anyone seeking top-notch service!",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "Jill",
+    username: "@jill",
+    body: "The service from Kronix was fantastic. They exceeded my expectations in every way.",
+    img: "https://avatar.vercel.sh/jill",
+  },
+  {
+    name: "John",
+    username: "@john",
+    body: "Kronix's team is both creative and professional. I highly recommend them for any digital project.",
+    img: "https://avatar.vercel.sh/john",
+  },
+  {
+    name: "Jane",
+    username: "@jane",
+    body: "I'm thrilled with the website Kronix delivered. Their attention to detail is unmatched.",
+    img: "https://avatar.vercel.sh/jane",
+  },
+  {
+    name: "Jenny",
+    username: "@jenny",
+    body: "Kronix went above and beyond to meet my needs. Their dedication truly shows in the final product.",
+    img: "https://avatar.vercel.sh/jenny",
+  },
+  {
+    name: "James",
+    username: "@james",
+    body: "Working with Kronix was a pleasure from start to finish. I can't recommend them enough!",
+    img: "https://avatar.vercel.sh/james",
+  },
+];
+
+const firstRow = reviews.slice(0, reviews.length / 2);
+const secondRow = reviews.slice(reviews.length / 2);
+
+const ReviewCard = ({
+  img,
+  name,
+  username,
+  body,
+}: {
+  img: string;
+  name: string;
+  username: string;
+  body: string;
+}) => {
+  return (
+    <figure
+      className={cn(
+        "relative w-64 cursor-pointer overflow-hidden rounded-xl border border-primary/5 p-4 text-white hover:border-primary/20 hover:bg-bgCard/5",
+      )}
+    >
+      <div className="flex h-12 flex-row items-center gap-2">
+        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <div className="flex flex-col">
+          <figcaption className="font-medium">{name}</figcaption>
+          <p className="text-xs opacity-80">{username}</p>
+        </div>
+      </div>
+      <blockquote className="mt-2 text-start text-sm">{body}</blockquote>
+    </figure>
+  );
+};
 
 export default function Testimonial() {
   return (
-    <div className="pb-28 text-center text-background">
+    <div className="pb-28 text-center">
       <FadeOnScroll>
-        <TitleLight
+        <TitleDark
           category="TESTIMONIAL"
           title={`Customer is Our Top \n Priority`}
-          titleStyles="tracking-normal font-[750]"
           description={`We survey all of our clients, the results of which go directly \n to our CEO.`}
           descriptionStyles="opacity-100"
         />
       </FadeOnScroll>
-      <div className="mx-8 my-12 mb-36 flex justify-center">
-        <div className="flex h-auto w-full max-w-[1000px] flex-col justify-between rounded-[40px] border border-borderGray bg-bgGray shadow-md lg:h-[485px] lg:flex-row">
-          <div className="flex flex-col items-start p-8 text-start text-background md:px-14">
-            <img
-              src="./assets/testimonial.svg"
-              alt="logo Gymstory"
-              className="mt-8 h-[31px] w-[158px]"
-            />
-            <h1 className="mt-6 w-full max-w-[495px] text-2xl font-extrabold capitalize lg:mt-10">
-              Kronix is the best digital agency I have ever seen! Highly
-              Recommended!
-            </h1>
-            <p className="mt-4 w-full max-w-[478px] text-xl opacity-80">
-              I recently hired <span className="font-bold">Ideapeel</span> for a
-              custom web development project and couldn't be happier with the
-              results. The team was able to bring my unique ideas to life and
-              create a website that truly stands out.
-            </p>
-            <p className="mt-8 text-xl font-extrabold">Diana Loreza</p>
-            <p className="mt-1 opacity-80">
-              Director of{" "}
-              <span className="font-extrabold uppercase">Gymstory</span>
-            </p>
-          </div>
-          <div className="flex items-center justify-center p-8 lg:pr-16">
-            <img
-              src="./assets/testimonial_pp.svg"
-              alt="Picture of the Director of Gymstory "
-              className="w-full max-w-[200px] lg:max-w-none"
-            />
-          </div>
-        </div>
+      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
+        <Marquee pauseOnHover className="[--duration:20s]">
+          {firstRow.map((review) => (
+            <ReviewCard key={review.username} {...review} />
+          ))}
+        </Marquee>
+        <Marquee reverse pauseOnHover className="[--duration:20s]">
+          {secondRow.map((review) => (
+            <ReviewCard key={review.username} {...review} />
+          ))}
+        </Marquee>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3"></div>
       </div>
     </div>
   );

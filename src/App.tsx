@@ -30,8 +30,8 @@ export default function App() {
       <div className="mx-auto max-w-7xl">
         <Capabilities />
       </div>
-      <div className="bg-white">
-        <div className="mx-auto max-w-7xl">
+      <div>
+        <div className="mx-auto">
           <Testimonial />
         </div>
       </div>
