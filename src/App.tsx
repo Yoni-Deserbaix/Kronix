@@ -1,3 +1,4 @@
+import ScrollToTopButton from "./components/ui/ScrollToTopButton";
 import BeautifulWorks from "./section/BeautifulWorks";
 import Brands from "./section/Brands";
 import Capabilities from "./section/Capabilities";
@@ -46,6 +47,7 @@ export default function App() {
       <div className="mx-auto max-w-7xl">
         <Footer />
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }

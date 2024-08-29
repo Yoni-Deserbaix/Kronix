@@ -25,7 +25,7 @@ export default function Header() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative" id="header">
       <FadeDown>
         <div className="mx-7 flex items-center justify-between rounded-3xl py-7 text-text">
           <Logo />
