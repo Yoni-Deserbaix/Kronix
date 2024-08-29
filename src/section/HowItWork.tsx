@@ -43,7 +43,7 @@ export default function HowItWorks() {
                   <img
                     src={item.src}
                     alt={item.name}
-                    className="p-1 lg:size-12"
+                    className="block transform p-1 transition-transform duration-300 hover:rotate-[360deg] lg:size-12"
                   />
                 </div>
                 {index < 2 && (

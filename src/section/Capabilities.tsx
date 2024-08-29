@@ -1,6 +1,5 @@
-import FadeLeft from "../components/animations/FadeLeft";
 import FadeOnScroll from "../components/animations/FadeOnScroll";
-import FadeRight from "../components/animations/FadeRight";
+import FadeUp from "../components/animations/FadeUp";
 import ElementPullUp from "../components/animations/magicui/element-pull-up";
 import TextRevealByWord from "../components/animations/magicui/text-reveal";
 import Button from "../components/ui/Button";
@@ -29,15 +28,15 @@ export default function Capabilities() {
         <ElementPullUp elements={elements} />
       </div>
       <div className="mx-12 flex flex-col items-center justify-evenly py-16 text-start lg:flex-row lg:gap-20">
-        <FadeLeft>
+        <FadeUp>
           <div className="flex flex-col lg:w-[606px]">
             <span className="text-sm text-primary">BENEFITS</span>
             <h1 className="mt-4 text-3xl font-bold md:text-5xl">
               The design subscription that connects you to your dream team
             </h1>
           </div>
-        </FadeLeft>
-        <FadeRight>
+        </FadeUp>
+        <FadeUp>
           <div className="flex translate-y-8 flex-col md:pb-16 lg:max-w-[536px] lg:translate-y-20">
             <p className="mt-4 font-extralight opacity-80 md:text-xl">
               A subscription can alleviate the stress of staffing, managing
@@ -47,7 +46,7 @@ export default function Capabilities() {
             </p>
             <Button text="See Pricing" className="mt-10 h-[56px] w-[149px]" />
           </div>
-        </FadeRight>
+        </FadeUp>
       </div>
       <div
         className="mx-auto grid w-[85%] grid-cols-1 py-14 text-start sm:grid-cols-2 md:w-full lg:grid-cols-3"

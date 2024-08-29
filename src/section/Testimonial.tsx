@@ -85,7 +85,7 @@ export default function Testimonial() {
           descriptionStyles="opacity-100"
         />
       </FadeOnScroll>
-      <div className="relative flex h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
+      <div className="relative mt-16 flex h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
