@@ -26,7 +26,7 @@ export default function Brands() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="mx-7 mt-8 flex overflow-hidden rounded-2xl bg-bgCard py-4 md:py-7"
+        className="mx-7 mt-8 flex overflow-hidden rounded-2xl bg-bgCard py-7"
       >
         <motion.div
           initial={{ translateX: 0 }}
