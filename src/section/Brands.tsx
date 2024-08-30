@@ -32,9 +32,9 @@ export default function Brands() {
           initial={{ translateX: 0 }}
           animate={{ translateX: "-50%" }}
           transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-          className="flex flex-none gap-16 pr-16"
+          className="flex flex-none gap-[5.5rem] pr-[5.5rem]"
         >
-          <div className="flex gap-16">
+          <div className="flex gap-[5.5rem]">
             {brandsLogo.concat(brandsLogo).map(({ name, src }, index) => (
               <div
                 key={`${name}-${index}`}
