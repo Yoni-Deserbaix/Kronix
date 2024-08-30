@@ -7,7 +7,7 @@ const reviews = [
   {
     name: "Cindy Carmella",
     username: "@cindyCarmella",
-    body: "Kronix is the best digital agency I've worked with. Highly recommended for anyone seeking top-notch service!",
+    body: "Kronix provided an outstanding experience from start to finish. I highly recommend them to anyone!",
     img: "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?t=st=1724952699~exp=1724956299~hmac=f0704aa73258f1aafd9bcdaa906c79525052c695de392b85573d5671d49f90aa&w=1380",
   },
   {
