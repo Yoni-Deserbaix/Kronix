@@ -40,7 +40,7 @@ export default function Brands() {
                 key={`${name}-${index}`}
                 className="flex w-auto flex-shrink-0 list-none items-center gap-3 md:gap-5"
               >
-                <img src={src} alt={`${name} logo`} className="size-10" />
+                <img src={src} alt={`${name} logo`} className="size-8" />
                 <span className="text-xl font-semibold text-lightGray md:text-2xl">
                   {name}
                 </span>
