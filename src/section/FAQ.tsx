@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { VscChevronDown } from "react-icons/vsc";
+import FadeUp from "../components/animations/FadeUp";
 import TitleLight from "../components/ui/TitleLight";
 import { faqData } from "../data.json";
 
@@ -66,10 +67,12 @@ export default function FAQ() {
       className="flex flex-col items-center justify-center pb-72 text-center"
       id="faq"
     >
-      <TitleLight
-        title="FAQ's"
-        description="Providing answers to your questions"
-      />
+      <FadeUp>
+        <TitleLight
+          title="FAQ's"
+          description="Providing answers to your questions"
+        />
+      </FadeUp>
       <div className="mt-12 flex w-full max-w-2xl flex-col gap-4 px-4 md:mt-20">
         {faqData.map((faq, index) => (
           <AccordionItem
