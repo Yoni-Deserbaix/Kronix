@@ -4,14 +4,15 @@ import FadeRight from "../components/animations/FadeRight";
 import ElementPullUp from "../components/animations/magicui/element-pull-up";
 import TextRevealByWord from "../components/animations/magicui/text-reveal";
 import Button from "../components/ui/Button";
+import FakeButton from "../components/ui/FakeButton";
 import TitleDark from "../components/ui/TitleDark";
 import { capabilitiesButtons, capabilitiesCards } from "../data.json";
 
 export default function Capabilities() {
   const elements = capabilitiesButtons.map((item, index) => (
-    <Button
+    <FakeButton
       key={index}
-      className="cursor-default px-6 py-3 text-xs md:h-[49.19px] md:px-10 md:text-sm"
+      className="px-6 py-3 text-xs hover:scale-105 md:h-[49.19px] md:px-10 md:text-sm"
       text={item.name}
     />
   ));

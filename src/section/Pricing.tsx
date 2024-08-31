@@ -2,6 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import FadeOnScroll from "../components/animations/FadeOnScroll";
 import Button from "../components/ui/Button";
+import FakeButton from "../components/ui/FakeButton";
 import TitleDark from "../components/ui/TitleDark";
 import { pricingCards } from "../data.json";
 
@@ -53,9 +54,9 @@ export default function Pricing() {
                       {card.title}
                     </h2>
                     {card.badge && (
-                      <Button
+                      <FakeButton
                         text={card.badge}
-                        className={`text-md cursor-default px-4 py-2 font-[350] ${index === 1 && "bg-white"}`}
+                        className={`text-md px-4 py-2 font-[350] ${index === 1 && "bg-white"}`}
                       />
                     )}
                   </div>
