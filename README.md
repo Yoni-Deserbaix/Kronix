@@ -28,6 +28,9 @@ Check out the project online 👉 [here](https://kronix.vercel.app/)
 
 ## Skills Gained 🌟
 
-- **Deep Understanding of Tailwind CSS**: Ability to create efficient and maintainable user interfaces using a utility-first approach.
 - **Animations with Framer Motion and Magic UI**: Proficiency in integrating complex animations to enhance page interactivity.
 - **Reproducing and Enhancing Designs**: Expertise in faithfully reproducing a design with added interactive elements and animations.
+
+## Inspirations 💭 
+
+https://www.figma.com/community/file/1334225650154033099
