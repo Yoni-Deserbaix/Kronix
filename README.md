@@ -4,14 +4,15 @@
 
 Kronix is a project focused on creating a landing page for a SaaS application. This project allowed me to enhance my frontend development skills by starting from a Figma design and integrating advanced animations using libraries like **Framer Motion** and **Magic UI**.
 
+## View project 👀 
+
+Check out the project online 👉 [here](https://kronix.vercel.app/)
+
 ## Screenshots 📸
 ![kronix-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/kronix01.png)
 ![kronix-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/kronix02.png)
 ![kronix-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/kronix03.png)
 
-## View project 👀 
-
-Check out the project online 👉 [here](https://kronix.vercel.app/)
 
 ## Technologies Used 🔪 
 
