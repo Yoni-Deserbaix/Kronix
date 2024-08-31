@@ -46,7 +46,9 @@ export default function Capabilities() {
               partner with you to ensure that your design elevates your brand to
               new levels.
             </p>
-            <Button text="See Pricing" className="mt-10 h-[56px] w-[149px]" />
+            <a href="#pricing">
+              <Button text="See Pricing" className="mt-10 h-[56px] w-[149px]" />
+            </a>
           </div>
         </FadeRight>
       </div>
