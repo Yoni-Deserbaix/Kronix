@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Kronix - Landing Page ✨ 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Kronix is a project focused on creating a landing page for a SaaS application. This project allowed me to enhance my frontend development skills by starting from a Figma design and integrating advanced animations using libraries like **Framer Motion** and **Magic UI**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## View project 👀 
 
-## Expanding the ESLint configuration
+Check out the project online 👉 [here](https://kronix.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Screenshots 📸
+![kronix-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/kronix01.png)
+![kronix-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/kronix02.png)
+![kronix-screen](https://cbdkybsqwibanwjshmgr.supabase.co/storage/v1/object/public/Projects/kronix03.png)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Technologies Used 🔪 
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **React**: JavaScript library for building user interfaces.
+- **TailwindCSS**: A utility-first CSS framework for quickly styling web applications.
+- **Framer Motion**: Animation library for React used to create smooth and interactive animations.
+- **Magic UI**: Collection of UI components and transitions to enhance user experience.
+
+## Features
+
+- **Advanced Animations**: Utilization of Framer Motion and Magic UI to add sophisticated animations, making the interface more dynamic and engaging.
+- **Responsive Design**: Optimization of the interface for a seamless user experience across all devices.
+
+## Skills Gained 🌟
+
+- **Animations with Framer Motion and Magic UI**: Proficiency in integrating complex animations to enhance page interactivity.
+- **Reproducing and Enhancing Designs**: Expertise in faithfully reproducing a design with added interactive elements and animations.
+
+## Inspirations 💭 
+
+https://www.figma.com/community/file/1334225650154033099
