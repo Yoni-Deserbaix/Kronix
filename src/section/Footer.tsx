@@ -126,13 +126,15 @@ export default function Footer() {
                 </a>
               </FadeOnScroll>
               <FadeOnScroll delay={0.5}>
-                <li className="flex items-center gap-5">
+                <ul className="flex items-center gap-5">
                   {socialLinks.map((social, index) => (
-                    <a href={social.href} key={index}>
-                      {social.icon}
-                    </a>
+                    <li key={index}>
+                      <a href={social.href} aria-label={social.href}>
+                        {social.icon}
+                      </a>
+                    </li>
                   ))}
-                </li>
+                </ul>
               </FadeOnScroll>
             </div>
           </div>
