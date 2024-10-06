@@ -53,7 +53,7 @@ export default function HowItWorks() {
                   </div>
                 )}
               </div>
-              <h3 className="mt-6 text-xl font-semibold">{item.title}</h3>
+              <h2 className="mt-6 text-xl font-semibold">{item.title}</h2>
               <p className="mb-8 w-2/3 font-extralight opacity-80 md:my-6">
                 {item.caption}
               </p>

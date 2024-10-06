@@ -63,7 +63,7 @@ export default function Capabilities() {
           >
             <FadeOnScroll delay={index * 0.1}>
               <img src={card.image} className="mb-4 size-10" alt={card.title} />
-              <h5 className="mb-4 pl-2 text-xl">{card.title}</h5>
+              <h2 className="mb-4 pl-2 text-xl">{card.title}</h2>
               <p className="text-md max-w-xs text-darkGray">
                 {card.description}
               </p>
