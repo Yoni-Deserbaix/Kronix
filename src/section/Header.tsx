@@ -50,6 +50,7 @@ export default function Header() {
                 toggleBurger();
               }}
               className="relative flex h-20 w-20 items-center justify-center"
+              aria-label="Burger menu"
             >
               <div className="relative w-full">
                 <div
@@ -74,22 +75,25 @@ export default function Header() {
           <div className="flex justify-end p-4"></div>
           <ul className="mx-8 flex flex-col items-start gap-8 font-normal">
             {headerList.map((item) => (
-              <a
-                href={`#${item.id}`}
-                key={item.id}
-                onClick={() => {
-                  setIsMenuOpen(!isMenuOpen);
-                  toggleBurger();
-                }}
-                className="w-full cursor-pointer underline underline-offset-8 transition-all hover:text-primary"
-              >
-                {item.name}
-              </a>
+              <li key={item.id} className="w-full">
+                <a
+                  href={`#${item.id}`}
+                  onClick={() => {
+                    setIsMenuOpen(!isMenuOpen);
+                    toggleBurger();
+                  }}
+                  className="cursor-pointer underline underline-offset-8 transition-all hover:text-primary"
+                >
+                  {item.name}
+                </a>
+              </li>
             ))}
-            <Button
-              text="Get Started"
-              className="h-[56px] w-full text-base font-extralight"
-            />
+            <li className="w-full">
+              <Button
+                text="Get Started"
+                className="h-[56px] w-full text-base font-extralight"
+              />
+            </li>
           </ul>
         </div>
       </FadeDown>

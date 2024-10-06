@@ -23,6 +23,7 @@ const socialLinks = [
       <TiSocialFacebook
         size={20}
         className="cursor-pointer rounded-full bg-primary p-0.5 text-background transition-all hover:opacity-60"
+        aria-label="Facebook"
       />
     ),
   },
@@ -32,6 +33,7 @@ const socialLinks = [
       <FaInstagram
         size={20}
         className="cursor-pointer transition-all hover:opacity-60"
+        aria-label="Instagram"
       />
     ),
   },
@@ -41,6 +43,7 @@ const socialLinks = [
       <FaLinkedinIn
         size={20}
         className="cursor-pointer transition-all hover:opacity-60"
+        aria-label="LinkedIn"
       />
     ),
   },
@@ -50,6 +53,7 @@ const socialLinks = [
       <FaDribbble
         size={20}
         className="cursor-pointer transition-all hover:opacity-60"
+        aria-label="Dribbble"
       />
     ),
   },
